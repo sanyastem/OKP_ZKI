@@ -1,0 +1,2 @@
+# OKP_ZKI
+C#,WPF,MSSQL
