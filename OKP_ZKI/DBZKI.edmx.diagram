@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="a3f963632a824b11b4fa016281cd45c8" Name="Diagram1">
+        <EntityTypeShape EntityType="DataBaseZKIModel.Adminstrator" Width="1.5" PointX="0.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DataBaseZKIModel.Answers" Width="1.5" PointX="7.5" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DataBaseZKIModel.Questions" Width="1.5" PointX="5.25" PointY="4.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="DataBaseZKIModel.Results" Width="1.5" PointX="9.75" PointY="3.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DataBaseZKIModel.Sections" Width="1.5" PointX="0.75" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="DataBaseZKIModel.Subjects" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="DataBaseZKIModel.sysdiagrams" Width="1.5" PointX="0.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DataBaseZKIModel.Tests" Width="1.5" PointX="7.5" PointY="4.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="DataBaseZKIModel.Texts" Width="1.5" PointX="5.25" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="DataBaseZKIModel.Users" Width="1.5" PointX="7.5" PointY="7.125" IsExpanded="true" />
+        <AssociationConnector Association="DataBaseZKIModel.FK_Answers_Questions" ManuallyRouted="false" />
+        <AssociationConnector Association="DataBaseZKIModel.FK_Answers_Texts" ManuallyRouted="false" />
+        <AssociationConnector Association="DataBaseZKIModel.FK_Tests_Questions" ManuallyRouted="false" />
+        <AssociationConnector Association="DataBaseZKIModel.FK_Results_Tests" ManuallyRouted="false" />
+        <AssociationConnector Association="DataBaseZKIModel.FK_Results_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="DataBaseZKIModel.FK_Subjects_Sections" ManuallyRouted="false" />
+        <AssociationConnector Association="DataBaseZKIModel.FK_Texts_Subjects" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
