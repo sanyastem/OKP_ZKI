@@ -30,6 +30,8 @@ namespace OKP_ZKI
         {
             DataBase.DataBaseJobs db = new DataBase.DataBaseJobs();
             db.AddRazdel(txtRazd.Text);
+            DtGridViewTM.DataSource = db.SelectTemRazdel();
+            TextGridview.DataSource = db.SelectText();
             DtGridViewTM.Refresh();
         }
 
@@ -57,7 +59,22 @@ namespace OKP_ZKI
         {
             DataBase.DataBaseJobs db = new DataBase.DataBaseJobs();
             db.AddTema(txtTema.Text,comboBox3.SelectedValue.ToString());
+            DtGridViewTM.DataSource = db.SelectTemRazdel();
+            TextGridview.DataSource = db.SelectText();
             DtGridViewTM.Refresh();
+        }
+
+        private void radButton2_Click(object sender, EventArgs e)
+        {
+            if (OpenFilebtnOne.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+            {
+                System.IO.StreamReader sr = new
+                   System.IO.StreamReader(OpenFilebtnOne.FileName);
+                OpenFilebtnOne.DefaultExt = "*.html"; // Default file extension
+                OpenFilebtnOne.Filter = "Text documents (.txt)|*.txt";
+                txtPath.Text = OpenFilebtnOne.FileName;
+                sr.Close();
+            }
         }
     }
 }
