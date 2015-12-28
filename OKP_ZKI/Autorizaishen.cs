@@ -38,5 +38,17 @@ namespace OKP_ZKI
             RegistrationForm forms = new RegistrationForm();
             forms.ShowDialog();
         }
+
+        private void выходToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void администраторToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AdminForm form = new AdminForm();
+            form.Show();
+            this.Hide();
+        }
     }
 }

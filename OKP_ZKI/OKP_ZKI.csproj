@@ -243,6 +243,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdminForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminForm.Designer.cs">
+      <DependentUpon>AdminForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Adminstrator.cs">
       <DependentUpon>DBZKI.tt</DependentUpon>
     </Compile>
@@ -254,6 +260,11 @@
     </Compile>
     <Compile Include="Autorizaishen.Designer.cs">
       <DependentUpon>Autorizaishen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataBaseZKIDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataBaseZKIDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="DBZKI.cs">
       <AutoGen>True</AutoGen>
@@ -281,6 +292,12 @@
     <Compile Include="sysdiagrams.cs">
       <DependentUpon>DBZKI.tt</DependentUpon>
     </Compile>
+    <Compile Include="TestForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TestForm.Designer.cs">
+      <DependentUpon>TestForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Tests.cs">
       <DependentUpon>DBZKI.tt</DependentUpon>
     </Compile>
@@ -290,6 +307,9 @@
     <Compile Include="Users.cs">
       <DependentUpon>DBZKI.tt</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AdminForm.resx">
+      <DependentUpon>AdminForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Autorizaishen.resx">
       <DependentUpon>Autorizaishen.cs</DependentUpon>
     </EmbeddedResource>
@@ -327,10 +347,24 @@
     <EmbeddedResource Include="RegistrationForm.resx">
       <DependentUpon>RegistrationForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="TestForm.resx">
+      <DependentUpon>TestForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EntityDeploy Include="DBZKI.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>DBZKI.Designer.cs</LastGenOutput>
     </EntityDeploy>
+    <None Include="DataBaseZKIDataSet.xsc">
+      <DependentUpon>DataBaseZKIDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DataBaseZKIDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataBaseZKIDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataBaseZKIDataSet.xss">
+      <DependentUpon>DataBaseZKIDataSet.xsd</DependentUpon>
+    </None>
     <None Include="DBZKI.edmx.diagram">
       <DependentUpon>DBZKI.edmx</DependentUpon>
     </None>
