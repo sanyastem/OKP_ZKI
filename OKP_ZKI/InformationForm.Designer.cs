@@ -28,11 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.visualStudio2012LightTheme1 = new Telerik.WinControls.Themes.VisualStudio2012LightTheme();
             this.visualStudio2012DarkTheme1 = new Telerik.WinControls.Themes.VisualStudio2012DarkTheme();
             this.telerikMetroTheme1 = new Telerik.WinControls.Themes.TelerikMetroTheme();
             this.treeView1 = new System.Windows.Forms.TreeView();
             this.webBrowser1 = new System.Windows.Forms.WebBrowser();
+            this.dataBaseZKIDataSet = new OKP_ZKI.DataBaseZKIDataSet();
+            this.textsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.textsTableAdapter = new OKP_ZKI.DataBaseZKIDataSetTableAdapters.TextsTableAdapter();
+            ((System.ComponentModel.ISupportInitialize)(this.dataBaseZKIDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textsBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             this.SuspendLayout();
             // 
@@ -43,6 +49,8 @@
             this.treeView1.Size = new System.Drawing.Size(270, 572);
             this.treeView1.TabIndex = 0;
             this.treeView1.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.treeView1_AfterSelect);
+            this.treeView1.NodeMouseClick += new System.Windows.Forms.TreeNodeMouseClickEventHandler(this.treeView1_NodeMouseClick);
+            this.treeView1.NodeMouseDoubleClick += new System.Windows.Forms.TreeNodeMouseClickEventHandler(this.treeView1_NodeMouseDoubleClick);
             // 
             // webBrowser1
             // 
@@ -51,6 +59,20 @@
             this.webBrowser1.Name = "webBrowser1";
             this.webBrowser1.Size = new System.Drawing.Size(490, 585);
             this.webBrowser1.TabIndex = 1;
+            // 
+            // dataBaseZKIDataSet
+            // 
+            this.dataBaseZKIDataSet.DataSetName = "DataBaseZKIDataSet";
+            this.dataBaseZKIDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // textsBindingSource
+            // 
+            this.textsBindingSource.DataMember = "Texts";
+            this.textsBindingSource.DataSource = this.dataBaseZKIDataSet;
+            // 
+            // textsTableAdapter
+            // 
+            this.textsTableAdapter.ClearBeforeFill = true;
             // 
             // InformationForm
             // 
@@ -68,7 +90,10 @@
             this.ShowIcon = false;
             this.Text = "InformationForm";
             this.ThemeName = "VisualStudio2012Light";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.InformationForm_FormClosed);
             this.Load += new System.EventHandler(this.InformationForm_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dataBaseZKIDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textsBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this)).EndInit();
             this.ResumeLayout(false);
 
@@ -81,5 +106,8 @@
         private Telerik.WinControls.Themes.TelerikMetroTheme telerikMetroTheme1;
         private System.Windows.Forms.TreeView treeView1;
         private System.Windows.Forms.WebBrowser webBrowser1;
+        private DataBaseZKIDataSet dataBaseZKIDataSet;
+        private System.Windows.Forms.BindingSource textsBindingSource;
+        private DataBaseZKIDataSetTableAdapters.TextsTableAdapter textsTableAdapter;
     }
 }

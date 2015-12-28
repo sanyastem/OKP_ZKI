@@ -47,7 +47,7 @@ namespace OKP_ZKI
 
         private void администраторToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            AdminForm form = new AdminForm();
+            AdminAutorizeishen form = new AdminAutorizeishen();
             form.Show();
             this.Hide();
         }
