@@ -99,6 +99,18 @@ namespace DataBase
                 return table;
             }
         }
+        public void SaveText(string path,string id,string title)
+        {
+            using (SqlConnection sql = new SqlConnection(connection))
+            {
+                string x = string.Format(@"INSERT INTO Texts(Text,id_subject,titles) VALUES ('{0}',{1},'{2}')", path, id,title);
+                sql.Open();
+                SqlCommand zapros = new SqlCommand();
+                zapros.Connection = sql;
+                zapros.CommandText = x;
+                zapros.ExecuteNonQuery();
+            }
+        }
 
     }
 }

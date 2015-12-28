@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            Telerik.WinControls.UI.TableViewDefinition tableViewDefinition10 = new Telerik.WinControls.UI.TableViewDefinition();
-            Telerik.WinControls.UI.TableViewDefinition tableViewDefinition9 = new Telerik.WinControls.UI.TableViewDefinition();
+            Telerik.WinControls.UI.TableViewDefinition tableViewDefinition13 = new Telerik.WinControls.UI.TableViewDefinition();
+            Telerik.WinControls.UI.TableViewDefinition tableViewDefinition14 = new Telerik.WinControls.UI.TableViewDefinition();
             this.visualStudio2012LightTheme1 = new Telerik.WinControls.Themes.VisualStudio2012LightTheme();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
@@ -207,7 +207,7 @@
             // 
             // 
             // 
-            this.DtGridViewTM.MasterTemplate.ViewDefinition = tableViewDefinition10;
+            this.DtGridViewTM.MasterTemplate.ViewDefinition = tableViewDefinition13;
             this.DtGridViewTM.Name = "DtGridViewTM";
             this.DtGridViewTM.Size = new System.Drawing.Size(652, 322);
             this.DtGridViewTM.TabIndex = 3;
@@ -260,6 +260,7 @@
             this.comboBox1.Size = new System.Drawing.Size(121, 21);
             this.comboBox1.TabIndex = 0;
             this.comboBox1.ValueMember = "id_section";
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // comboBox2
             // 
@@ -281,6 +282,7 @@
             this.radButton1.TabIndex = 1;
             this.radButton1.Text = "Сохранить";
             this.radButton1.ThemeName = "VisualStudio2012Light";
+            this.radButton1.Click += new System.EventHandler(this.radButton1_Click);
             // 
             // txtPath
             // 
@@ -312,7 +314,7 @@
             // 
             // 
             // 
-            this.TextGridview.MasterTemplate.ViewDefinition = tableViewDefinition9;
+            this.TextGridview.MasterTemplate.ViewDefinition = tableViewDefinition14;
             this.TextGridview.Name = "TextGridview";
             this.TextGridview.Size = new System.Drawing.Size(661, 243);
             this.TextGridview.TabIndex = 3;

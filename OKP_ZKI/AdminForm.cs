@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
@@ -75,6 +76,29 @@ namespace OKP_ZKI
                 txtPath.Text = OpenFilebtnOne.FileName;
                 sr.Close();
             }
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            SqlConnection connRC = new SqlConnection(@"Data Source=АЛЕКСАНДР-ПК\SQLEXPRESS;Initial Catalog=DataBaseZKI;Integrated Security=True");
+            string command = string.Format("SELECT Sections.Section,Subjects.Subject FROM Subjects,Sections"
++" WHERE Subjects.id_section = Sections.id_section AND Subjects.id_section = '{0}'",comboBox1.SelectedValue.ToString());
+            SqlDataAdapter da = new SqlDataAdapter(command, connRC);
+
+            DataSet ds = new DataSet();
+            connRC.Open();
+            da.Fill(ds);
+            connRC.Close();
+
+            comboBox2.DataSource = ds.Tables[0];
+        }
+
+        private void radButton1_Click(object sender, EventArgs e)
+        {
+            DataBase.DataBaseJobs db = new DataBase.DataBaseJobs();
+            db.SaveText(OpenFilebtnOne.FileName,comboBox2.SelectedValue.ToString(),txtNameText.Text);
+            TextGridview.DataSource = db.SelectText();
+            TextGridview.Refresh();
         }
     }
 }
