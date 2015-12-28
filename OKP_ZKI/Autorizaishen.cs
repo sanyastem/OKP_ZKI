@@ -22,7 +22,8 @@ namespace OKP_ZKI
             if (a.UsersAutoriseishen(Logintxt.Text,Passwordtxt.Text))
             {
                 InformationForm forms = new InformationForm();
-                forms.Show();  
+                forms.Show();
+                this.Hide(); 
             }
             else
             {
