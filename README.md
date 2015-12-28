@@ -1,2 +1,2 @@
 # OKP_ZKI
-C#,WPF,MSSQL
+C#,WinForms,MSSQL
