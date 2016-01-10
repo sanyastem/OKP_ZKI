@@ -12,6 +12,7 @@ namespace OKP_ZKI
 {
     public partial class InformationForm : Telerik.WinControls.UI.RadForm
     {
+        int strOne = 0;
         public InformationForm()
         {
             InitializeComponent();
@@ -54,12 +55,17 @@ namespace OKP_ZKI
              
                  db.Open();
                  
-                     string zapros = string.Format("SELECT Texts.Text FROM Sections,Subjects,Texts"
+                     string zapros1 = string.Format("SELECT Texts.Text FROM Sections,Subjects,Texts"
  +" WHERE Sections.id_section = Subjects.id_section AND Subjects.id_subject = Texts.id_subject"
  +" AND Texts.titles = '{0}'",e.Node.Text.ToString());
-                     SqlCommand a = new SqlCommand(zapros, db);
-                     
+            string zapros2 = string.Format("SELECT Texts.id_text FROM Sections,Subjects,Texts"
+ +" WHERE Sections.id_section = Subjects.id_section AND Subjects.id_subject = Texts.id_subject AND"
++" Texts.titles = '{0}'",e.Node.Text.ToString());
+                     SqlCommand a = new SqlCommand(zapros1, db);
+            SqlCommand b = new SqlCommand(zapros2,db);
+            strOne = (int)b.ExecuteScalar();
             string n = (string)a.ExecuteScalar();
+            
             webBrowser1.Navigate(n);
                      
 
@@ -70,6 +76,25 @@ namespace OKP_ZKI
         private void InformationForm_FormClosed(object sender, FormClosedEventArgs e)
         {
             Application.Exit();
+        }
+
+        private void выходToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void администраторToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AdminAutorizeishen forms = new AdminAutorizeishen();
+            forms.Show();
+            this.Hide();
+        }
+
+        private void btnTest_Click(object sender, EventArgs e)
+        {
+
+            TestForm forms = new TestForm(strOne);
+            forms.ShowDialog();
         }
     }
 }

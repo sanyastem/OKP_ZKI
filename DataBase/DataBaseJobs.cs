@@ -111,6 +111,24 @@ namespace DataBase
                 zapros.ExecuteNonQuery();
             }
         }
+        public bool Option(string str)
+        {
+            using (SqlConnection db = new SqlConnection(connection))
+            {
+                db.Open();
+                string x = string.Format("SELECT Options.[Option] FROM Questions,Options"
++" WHERE Questions.id_option = Options.id_options AND Questions.Question LIKE '{0}'",str);
+                SqlCommand a = new SqlCommand(x, db);
+                if ((string)a.ExecuteScalar() == "Один ответ                                                                                          ")
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            }
+        }
 
     }
 }

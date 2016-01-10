@@ -34,11 +34,25 @@ namespace OKP_ZKI
             DtGridViewTM.DataSource = db.SelectTemRazdel();
             TextGridview.DataSource = db.SelectText();
             DtGridViewTM.Refresh();
+            txtRazd.Clear();
+            comboBox3.Refresh();
+            SqlConnection connRC = new SqlConnection(@"Data Source=АЛЕКСАНДР-ПК\SQLEXPRESS;Initial Catalog=DataBaseZKI;Integrated Security=True");
+            string command = string.Format("SELECT Subjects.Subject FROM Sections,Subjects"
++ " WHERE Subjects.id_section = Sections.id_section ");
+            SqlDataAdapter da = new SqlDataAdapter(command, connRC);
+
+            DataSet ds = new DataSet();
+            connRC.Open();
+            da.Fill(ds);
+            connRC.Close();
+
+            comboBox3.DataSource = ds.Tables[0];
         }
 
         private void comboBox3_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            
+            
         }
 
         private void AdminForm_Load(object sender, EventArgs e)
@@ -80,17 +94,20 @@ namespace OKP_ZKI
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
+
             SqlConnection connRC = new SqlConnection(@"Data Source=АЛЕКСАНДР-ПК\SQLEXPRESS;Initial Catalog=DataBaseZKI;Integrated Security=True");
-            string command = string.Format("SELECT Sections.Section,Subjects.Subject FROM Subjects,Sections"
-+" WHERE Subjects.id_section = Sections.id_section AND Subjects.id_section = '{0}'",comboBox1.SelectedValue.ToString());
+            string command = string.Format("SELECT Subjects.Subject FROM Sections,Subjects"
++ " WHERE Subjects.id_section = Sections.id_section AND Sections.id_section='{0}'", comboBox1.SelectedValue);
+            connRC.Open();
             SqlDataAdapter da = new SqlDataAdapter(command, connRC);
 
             DataSet ds = new DataSet();
-            connRC.Open();
+
             da.Fill(ds);
-            connRC.Close();
+
 
             comboBox2.DataSource = ds.Tables[0];
+            connRC.Close();
         }
 
         private void radButton1_Click(object sender, EventArgs e)
@@ -99,6 +116,24 @@ namespace OKP_ZKI
             db.SaveText(OpenFilebtnOne.FileName,comboBox2.SelectedValue.ToString(),txtNameText.Text);
             TextGridview.DataSource = db.SelectText();
             TextGridview.Refresh();
+        }
+
+        private void выходToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void пользовательToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Autorizaishen forms = new Autorizaishen();
+            forms.Show();
+            this.Hide();
+        }
+
+        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            
+            
         }
     }
 }
