@@ -55,7 +55,16 @@ namespace OKP_ZKI
             {
                 if (db.Option(item))
                 {
-                    
+                    foreach (var dd in one)
+                    {
+                        for (int i = 0; i < 4; i++)
+                        {
+                            int x = 180, y = 60;
+                            dd.Text = "ty";
+                            dd.Location = new Point(x + 4, y + 4);
+                            radPageViewPage1.Container.Add(dd);
+                        }
+                    }
                 }
                 else
                 {
