@@ -129,6 +129,25 @@ namespace DataBase
                 }
             }
         }
+        public List<string> Otvet(string str)
+        {
+            List<string> one = new List<string>();
+            using (SqlConnection db = new SqlConnection(connection))
+            {
+                db.Open();
+                string x = string.Format("SELECT Answers.Answer FROM Questions,Answers,Texts"
++" WHERE Answers.id_question = Questions.id_question AND Texts.id_text = Answers.id_text AND Questions.Question LIKE '{0}'", str);
+                SqlCommand a = new SqlCommand(x, db);
+                SqlDataReader rd = a.ExecuteReader();
+
+                while (rd.Read())
+                {
+                    one.Add(rd["Answer"].ToString());
+                    
+                }
+           }
+            return one;
+        }
 
     }
 }
