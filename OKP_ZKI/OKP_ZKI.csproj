@@ -272,6 +272,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DataBaseZKIDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="DataBaseZKIDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataBaseZKIDataSet1.xsd</DependentUpon>
+    </Compile>
     <Compile Include="DBZKI.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -286,8 +291,20 @@
     <Compile Include="RegistrationForm.Designer.cs">
       <DependentUpon>RegistrationForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="ResultForms.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ResultForms.Designer.cs">
+      <DependentUpon>ResultForms.cs</DependentUpon>
+    </Compile>
     <Compile Include="Results.cs">
       <DependentUpon>DBZKI.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ScreensaverForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ScreensaverForm.Designer.cs">
+      <DependentUpon>ScreensaverForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Sections.cs">
       <DependentUpon>DBZKI.tt</DependentUpon>
@@ -352,9 +369,16 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="RegistrationForm.resx">
       <DependentUpon>RegistrationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ResultForms.resx">
+      <DependentUpon>ResultForms.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScreensaverForm.resx">
+      <DependentUpon>ScreensaverForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TestForm.resx">
       <DependentUpon>TestForm.cs</DependentUpon>
@@ -373,6 +397,17 @@
     </None>
     <None Include="DataBaseZKIDataSet.xss">
       <DependentUpon>DataBaseZKIDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DataBaseZKIDataSet1.xsc">
+      <DependentUpon>DataBaseZKIDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataBaseZKIDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataBaseZKIDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataBaseZKIDataSet1.xss">
+      <DependentUpon>DataBaseZKIDataSet1.xsd</DependentUpon>
     </None>
     <None Include="DBZKI.edmx.diagram">
       <DependentUpon>DBZKI.edmx</DependentUpon>
@@ -393,6 +428,8 @@
   </ItemGroup>
   <ItemGroup>
     <!--sirinie -->
+    <None Include="bin\Debug\Image\1.jpg" />
+    <None Include="bin\Debug\Image\kurs.png" />
     <Content Include="DBZKI.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>DBZKI.edmx</DependentUpon>

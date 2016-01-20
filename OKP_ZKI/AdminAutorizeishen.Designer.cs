@@ -82,6 +82,7 @@
             // 
             this.RootElement.ApplyShapeToControl = true;
             this.ShowIcon = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Авторизация";
             this.ThemeName = "VisualStudio2012Light";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.AdminAutorizeishen_FormClosed);

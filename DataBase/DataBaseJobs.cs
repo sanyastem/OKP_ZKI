@@ -11,7 +11,7 @@ namespace DataBase
 {
     public class DataBaseJobs
     {
-        string connection = @"Data Source=АЛЕКСАНДР-ПК\SQLEXPRESS;Initial Catalog=DataBaseZKI;Integrated Security=True";
+        string connection = @"Data Source=(local)\SQLEXPRESS;Initial Catalog=DataBaseZKI;Integrated Security=True";
         public void Usersregistration(string login,string password)
         {
             using(SqlConnection sql = new SqlConnection(connection))
@@ -135,8 +135,8 @@ namespace DataBase
             using (SqlConnection db = new SqlConnection(connection))
             {
                 db.Open();
-                string x = string.Format("SELECT Answers.Answer FROM Questions,Answers,Texts"
-+" WHERE Answers.id_question = Questions.id_question AND Texts.id_text = Answers.id_text AND Questions.Question LIKE '{0}'", str);
+                string x = string.Format("SELECT Answers.Answer FROM Questions,Answers,Texts,Tests "
++ " WHERE Answers.id_question = Questions.id_question AND Texts.id_text = Tests.id_texts AND Questions.id_test = Tests.id_test AND Questions.Question LIKE '{0}'", str);
                 SqlCommand a = new SqlCommand(x, db);
                 SqlDataReader rd = a.ExecuteReader();
 
@@ -148,6 +148,70 @@ namespace DataBase
            }
             return one;
         }
+        public bool PravOtvet(string one, string two)
+        {
+                SqlConnection db = new SqlConnection(connection);
+            
+                db.Open();
+                string x = string.Format("SELECT Answers.[right] FROM Answers,Questions"
++ " WHERE Questions.id_question = Questions.id_question AND Answers.Answer LIKE '{0}' AND Questions.Question LIKE '{1}'", one, two);
+                SqlCommand a = new SqlCommand(x, db);
+                return (bool) a.ExecuteScalar();
+                db.Close();
+                 
+                
+            
+        }
+        public DataTable SelectOtvet()
+        {
+            using (SqlConnection sql = new SqlConnection(connection))
+            {
+                DataTable table = new DataTable();
+                sql.Open();
+                string zapros = string.Format("SELECT Answers.Answer,Questions.Question,Options.[Option],Answers.[right],Texts.titles FROM Answers,Questions,Texts,Options,Tests"
+ +" WHERE Questions.id_question = Answers.id_question  AND Options.id_options = Questions.id_option AND Questions.id_test = Tests.id_test AND Texts.id_text = Tests.id_texts");
+                SqlCommand a = new SqlCommand(zapros, sql);
+                SqlDataReader z = a.ExecuteReader();
+                table.Load(z);
+                z.Close();
+                return table;
+            }
+        }
+
+         public int SelName(string name)
+        {
+                SqlConnection db = new SqlConnection(connection);
+            
+                db.Open();
+                string x = string.Format("SELECT Users.id_users  FROM Users"
++" WHERE Users.Login = '{0}'", name);
+                SqlCommand a = new SqlCommand(x, db);
+                return (int) a.ExecuteScalar();
+                db.Close();
+        }
+         public int SelTs(int name)
+         {
+             SqlConnection db = new SqlConnection(connection);
+
+             db.Open();
+             string x = string.Format("SELECT Tests.id_test FROM Tests,Texts "
++" WHERE Texts.id_text = Tests.id_texts AND Texts.id_text = {0}", name);
+             SqlCommand a = new SqlCommand(x, db);
+             return (int)a.ExecuteScalar();
+             db.Close();
+         }
+         public void SaveResult(int result, int idUser,int idText, DateTime time)
+         {
+             using (SqlConnection sql = new SqlConnection(connection))
+             {
+                 sql.Open();
+                 string x = string.Format(@"INSERT INTO Results(Result,id_users,id_test,DateAndTime) VALUES ('{0}','{1}','{2}','{3}')", result, idUser, idText, time);
+                 SqlCommand zapros = new SqlCommand();
+                 zapros.Connection = sql;
+                 zapros.CommandText = x;
+                 zapros.ExecuteNonQuery();
+             }
+         }
 
     }
 }

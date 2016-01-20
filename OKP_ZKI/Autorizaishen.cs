@@ -21,7 +21,7 @@ namespace OKP_ZKI
             DataBase.DataBaseJobs a = new DataBase.DataBaseJobs();
             if (a.UsersAutoriseishen(Logintxt.Text,Passwordtxt.Text))
             {
-                InformationForm forms = new InformationForm();
+                InformationForm forms = new InformationForm(Logintxt.Text);
                 forms.Show();
                 this.Hide(); 
             }

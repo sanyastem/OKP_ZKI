@@ -29,17 +29,16 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            Telerik.WinControls.UI.TableViewDefinition tableViewDefinition13 = new Telerik.WinControls.UI.TableViewDefinition();
-            Telerik.WinControls.UI.TableViewDefinition tableViewDefinition14 = new Telerik.WinControls.UI.TableViewDefinition();
-            Telerik.WinControls.UI.TableViewDefinition tableViewDefinition15 = new Telerik.WinControls.UI.TableViewDefinition();
+            Telerik.WinControls.UI.TableViewDefinition tableViewDefinition8 = new Telerik.WinControls.UI.TableViewDefinition();
+            Telerik.WinControls.UI.TableViewDefinition tableViewDefinition9 = new Telerik.WinControls.UI.TableViewDefinition();
+            Telerik.WinControls.UI.TableViewDefinition tableViewDefinition10 = new Telerik.WinControls.UI.TableViewDefinition();
+            Telerik.WinControls.UI.TableViewDefinition tableViewDefinition7 = new Telerik.WinControls.UI.TableViewDefinition();
             this.visualStudio2012LightTheme1 = new Telerik.WinControls.Themes.VisualStudio2012LightTheme();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.radPageView1 = new Telerik.WinControls.UI.RadPageView();
             this.radPageViewPage1 = new Telerik.WinControls.UI.RadPageViewPage();
             this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.sectionsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.dataBaseZKIDataSet = new OKP_ZKI.DataBaseZKIDataSet();
             this.radLabel2 = new Telerik.WinControls.UI.RadLabel();
             this.DtGridViewTM = new Telerik.WinControls.UI.RadGridView();
             this.txtRazd = new Telerik.WinControls.UI.RadTextBoxControl();
@@ -56,10 +55,11 @@
             this.radButton1 = new Telerik.WinControls.UI.RadButton();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.subjectsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dataBaseZKIDataSet = new OKP_ZKI.DataBaseZKIDataSet();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.sectionsBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.radGridView1 = new Telerik.WinControls.UI.RadGridView();
+            this.sectionsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.OpenFilebtnOne = new System.Windows.Forms.OpenFileDialog();
             this.sectionsTableAdapter = new OKP_ZKI.DataBaseZKIDataSetTableAdapters.SectionsTableAdapter();
             this.subjectsTableAdapter = new OKP_ZKI.DataBaseZKIDataSetTableAdapters.SubjectsTableAdapter();
@@ -70,13 +70,42 @@
             this.справкаToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.пользовательToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.выходToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.answersBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.answersTableAdapter = new OKP_ZKI.DataBaseZKIDataSetTableAdapters.AnswersTableAdapter();
+            this.dataBaseZKIDataSet1 = new OKP_ZKI.DataBaseZKIDataSet1();
+            this.optionsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.optionsTableAdapter = new OKP_ZKI.DataBaseZKIDataSet1TableAdapters.OptionsTableAdapter();
+            this.radPageView2 = new Telerik.WinControls.UI.RadPageView();
+            this.radPageViewPage3 = new Telerik.WinControls.UI.RadPageViewPage();
+            this.radPageViewPage4 = new Telerik.WinControls.UI.RadPageViewPage();
+            this.radButton3 = new Telerik.WinControls.UI.RadButton();
+            this.radTextBox1 = new Telerik.WinControls.UI.RadTextBox();
+            this.comboBox4 = new System.Windows.Forms.ComboBox();
+            this.comboBox5 = new System.Windows.Forms.ComboBox();
+            this.comboBox6 = new System.Windows.Forms.ComboBox();
+            this.radGridView1 = new Telerik.WinControls.UI.RadGridView();
+            this.comboBox7 = new System.Windows.Forms.ComboBox();
+            this.comboBox8 = new System.Windows.Forms.ComboBox();
+            this.comboBox9 = new System.Windows.Forms.ComboBox();
+            this.radTextBox2 = new Telerik.WinControls.UI.RadTextBox();
+            this.radTextBox3 = new Telerik.WinControls.UI.RadTextBox();
+            this.radTextBox4 = new Telerik.WinControls.UI.RadTextBox();
+            this.radTextBox5 = new Telerik.WinControls.UI.RadTextBox();
+            this.comboBox10 = new System.Windows.Forms.ComboBox();
+            this.comboBox11 = new System.Windows.Forms.ComboBox();
+            this.comboBox12 = new System.Windows.Forms.ComboBox();
+            this.comboBox13 = new System.Windows.Forms.ComboBox();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.radioButton3 = new System.Windows.Forms.RadioButton();
+            this.radioButton4 = new System.Windows.Forms.RadioButton();
+            this.radButton4 = new Telerik.WinControls.UI.RadButton();
+            this.radGridView2 = new Telerik.WinControls.UI.RadGridView();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.radPageView1)).BeginInit();
             this.radPageView1.SuspendLayout();
             this.radPageViewPage1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.sectionsBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataBaseZKIDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DtGridViewTM)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DtGridViewTM.MasterTemplate)).BeginInit();
@@ -94,12 +123,30 @@
             ((System.ComponentModel.ISupportInitialize)(this.radButton2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radButton1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.subjectsBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataBaseZKIDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sectionsBindingSource1)).BeginInit();
             this.tabPage2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.radGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radGridView1.MasterTemplate)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sectionsBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fKTextsSubjectsBindingSource)).BeginInit();
             this.menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.answersBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataBaseZKIDataSet1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.optionsBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radPageView2)).BeginInit();
+            this.radPageView2.SuspendLayout();
+            this.radPageViewPage3.SuspendLayout();
+            this.radPageViewPage4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.radButton3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radTextBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radGridView1.MasterTemplate)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radTextBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radTextBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radTextBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radTextBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radButton4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radGridView2.MasterTemplate)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             this.SuspendLayout();
             // 
@@ -170,16 +217,6 @@
             this.comboBox3.TabIndex = 5;
             this.comboBox3.SelectedIndexChanged += new System.EventHandler(this.comboBox3_SelectedIndexChanged);
             // 
-            // sectionsBindingSource
-            // 
-            this.sectionsBindingSource.DataMember = "Sections";
-            this.sectionsBindingSource.DataSource = this.dataBaseZKIDataSet;
-            // 
-            // dataBaseZKIDataSet
-            // 
-            this.dataBaseZKIDataSet.DataSetName = "DataBaseZKIDataSet";
-            this.dataBaseZKIDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // radLabel2
             // 
             this.radLabel2.Font = new System.Drawing.Font("Buxton Sketch", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -195,7 +232,7 @@
             // 
             // 
             // 
-            this.DtGridViewTM.MasterTemplate.ViewDefinition = tableViewDefinition13;
+            this.DtGridViewTM.MasterTemplate.ViewDefinition = tableViewDefinition8;
             this.DtGridViewTM.Name = "DtGridViewTM";
             this.DtGridViewTM.Size = new System.Drawing.Size(652, 322);
             this.DtGridViewTM.TabIndex = 3;
@@ -274,8 +311,9 @@
             // 
             this.txtNameText.Location = new System.Drawing.Point(190, 130);
             this.txtNameText.Name = "txtNameText";
-            this.txtNameText.Size = new System.Drawing.Size(121, 20);
+            this.txtNameText.Size = new System.Drawing.Size(121, 24);
             this.txtNameText.TabIndex = 4;
+            this.txtNameText.ThemeName = "VisualStudio2012Light";
             // 
             // TextGridview
             // 
@@ -283,11 +321,12 @@
             // 
             // 
             // 
-            this.TextGridview.MasterTemplate.ViewDefinition = tableViewDefinition14;
+            this.TextGridview.MasterTemplate.ViewDefinition = tableViewDefinition9;
             this.TextGridview.Name = "TextGridview";
             this.TextGridview.Size = new System.Drawing.Size(661, 243);
             this.TextGridview.TabIndex = 3;
             this.TextGridview.Text = "radGridView1";
+            this.TextGridview.ThemeName = "VisualStudio2012Light";
             // 
             // txtPath
             // 
@@ -338,6 +377,11 @@
             this.subjectsBindingSource.DataMember = "Subjects";
             this.subjectsBindingSource.DataSource = this.dataBaseZKIDataSet;
             // 
+            // dataBaseZKIDataSet
+            // 
+            this.dataBaseZKIDataSet.DataSetName = "DataBaseZKIDataSet";
+            this.dataBaseZKIDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // comboBox1
             // 
             this.comboBox1.DataSource = this.sectionsBindingSource1;
@@ -358,7 +402,7 @@
             // 
             // tabPage2
             // 
-            this.tabPage2.Controls.Add(this.radGridView1);
+            this.tabPage2.Controls.Add(this.radPageView2);
             this.tabPage2.Location = new System.Drawing.Point(23, 4);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
@@ -367,17 +411,10 @@
             this.tabPage2.Text = "Тест";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
-            // radGridView1
+            // sectionsBindingSource
             // 
-            this.radGridView1.Location = new System.Drawing.Point(6, 279);
-            // 
-            // 
-            // 
-            this.radGridView1.MasterTemplate.ViewDefinition = tableViewDefinition15;
-            this.radGridView1.Name = "radGridView1";
-            this.radGridView1.Size = new System.Drawing.Size(673, 329);
-            this.radGridView1.TabIndex = 0;
-            this.radGridView1.Text = "radGridView1";
+            this.sectionsBindingSource.DataMember = "Sections";
+            this.sectionsBindingSource.DataSource = this.dataBaseZKIDataSet;
             // 
             // OpenFilebtnOne
             // 
@@ -439,6 +476,307 @@
             this.выходToolStripMenuItem.Text = "Выход";
             this.выходToolStripMenuItem.Click += new System.EventHandler(this.выходToolStripMenuItem_Click);
             // 
+            // answersBindingSource
+            // 
+            this.answersBindingSource.DataMember = "Answers";
+            this.answersBindingSource.DataSource = this.dataBaseZKIDataSet;
+            // 
+            // answersTableAdapter
+            // 
+            this.answersTableAdapter.ClearBeforeFill = true;
+            // 
+            // dataBaseZKIDataSet1
+            // 
+            this.dataBaseZKIDataSet1.DataSetName = "DataBaseZKIDataSet1";
+            this.dataBaseZKIDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // optionsBindingSource
+            // 
+            this.optionsBindingSource.DataMember = "Options";
+            this.optionsBindingSource.DataSource = this.dataBaseZKIDataSet1;
+            // 
+            // optionsTableAdapter
+            // 
+            this.optionsTableAdapter.ClearBeforeFill = true;
+            // 
+            // radPageView2
+            // 
+            this.radPageView2.Controls.Add(this.radPageViewPage3);
+            this.radPageView2.Controls.Add(this.radPageViewPage4);
+            this.radPageView2.ItemSizeMode = ((Telerik.WinControls.UI.PageViewItemSizeMode)((Telerik.WinControls.UI.PageViewItemSizeMode.EqualWidth | Telerik.WinControls.UI.PageViewItemSizeMode.EqualHeight)));
+            this.radPageView2.Location = new System.Drawing.Point(6, 6);
+            this.radPageView2.Name = "radPageView2";
+            this.radPageView2.SelectedPage = this.radPageViewPage4;
+            this.radPageView2.Size = new System.Drawing.Size(670, 605);
+            this.radPageView2.TabIndex = 0;
+            this.radPageView2.Text = "radPageView2";
+            this.radPageView2.ThemeName = "VisualStudio2012Light";
+            this.radPageView2.ViewMode = Telerik.WinControls.UI.PageViewMode.Stack;
+            // 
+            // radPageViewPage3
+            // 
+            this.radPageViewPage3.Controls.Add(this.radGridView1);
+            this.radPageViewPage3.Controls.Add(this.comboBox7);
+            this.radPageViewPage3.Controls.Add(this.comboBox6);
+            this.radPageViewPage3.Controls.Add(this.comboBox5);
+            this.radPageViewPage3.Controls.Add(this.comboBox4);
+            this.radPageViewPage3.Controls.Add(this.radTextBox1);
+            this.radPageViewPage3.Controls.Add(this.radButton3);
+            this.radPageViewPage3.ItemSize = new System.Drawing.SizeF(670F, 28F);
+            this.radPageViewPage3.Location = new System.Drawing.Point(5, 28);
+            this.radPageViewPage3.Name = "radPageViewPage3";
+            this.radPageViewPage3.Size = new System.Drawing.Size(660, 516);
+            this.radPageViewPage3.Text = "Вопрос";
+            // 
+            // radPageViewPage4
+            // 
+            this.radPageViewPage4.Controls.Add(this.radGridView2);
+            this.radPageViewPage4.Controls.Add(this.radButton4);
+            this.radPageViewPage4.Controls.Add(this.radioButton4);
+            this.radPageViewPage4.Controls.Add(this.radioButton3);
+            this.radPageViewPage4.Controls.Add(this.radioButton2);
+            this.radPageViewPage4.Controls.Add(this.radioButton1);
+            this.radPageViewPage4.Controls.Add(this.radTextBox5);
+            this.radPageViewPage4.Controls.Add(this.radTextBox4);
+            this.radPageViewPage4.Controls.Add(this.radTextBox3);
+            this.radPageViewPage4.Controls.Add(this.radTextBox2);
+            this.radPageViewPage4.Controls.Add(this.comboBox9);
+            this.radPageViewPage4.Controls.Add(this.comboBox13);
+            this.radPageViewPage4.Controls.Add(this.comboBox12);
+            this.radPageViewPage4.Controls.Add(this.comboBox11);
+            this.radPageViewPage4.Controls.Add(this.comboBox10);
+            this.radPageViewPage4.Controls.Add(this.comboBox8);
+            this.radPageViewPage4.ItemSize = new System.Drawing.SizeF(670F, 28F);
+            this.radPageViewPage4.Location = new System.Drawing.Point(5, 28);
+            this.radPageViewPage4.Name = "radPageViewPage4";
+            this.radPageViewPage4.Size = new System.Drawing.Size(660, 516);
+            this.radPageViewPage4.Text = "Ответ";
+            // 
+            // radButton3
+            // 
+            this.radButton3.Location = new System.Drawing.Point(268, 200);
+            this.radButton3.Name = "radButton3";
+            this.radButton3.Size = new System.Drawing.Size(110, 24);
+            this.radButton3.TabIndex = 0;
+            this.radButton3.Text = "Сохранить";
+            this.radButton3.ThemeName = "VisualStudio2012Light";
+            // 
+            // radTextBox1
+            // 
+            this.radTextBox1.Location = new System.Drawing.Point(248, 155);
+            this.radTextBox1.Name = "radTextBox1";
+            this.radTextBox1.Size = new System.Drawing.Size(148, 24);
+            this.radTextBox1.TabIndex = 1;
+            this.radTextBox1.ThemeName = "VisualStudio2012Light";
+            // 
+            // comboBox4
+            // 
+            this.comboBox4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox4.FormattingEnabled = true;
+            this.comboBox4.Location = new System.Drawing.Point(248, 3);
+            this.comboBox4.Name = "comboBox4";
+            this.comboBox4.Size = new System.Drawing.Size(148, 21);
+            this.comboBox4.TabIndex = 2;
+            this.comboBox4.SelectedIndexChanged += new System.EventHandler(this.comboBox4_SelectedIndexChanged_1);
+            // 
+            // comboBox5
+            // 
+            this.comboBox5.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox5.FormattingEnabled = true;
+            this.comboBox5.Location = new System.Drawing.Point(248, 44);
+            this.comboBox5.Name = "comboBox5";
+            this.comboBox5.Size = new System.Drawing.Size(148, 21);
+            this.comboBox5.TabIndex = 2;
+            // 
+            // comboBox6
+            // 
+            this.comboBox6.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox6.FormattingEnabled = true;
+            this.comboBox6.Location = new System.Drawing.Point(248, 80);
+            this.comboBox6.Name = "comboBox6";
+            this.comboBox6.Size = new System.Drawing.Size(148, 21);
+            this.comboBox6.TabIndex = 2;
+            // 
+            // radGridView1
+            // 
+            this.radGridView1.Location = new System.Drawing.Point(0, 241);
+            // 
+            // 
+            // 
+            this.radGridView1.MasterTemplate.ViewDefinition = tableViewDefinition10;
+            this.radGridView1.Name = "radGridView1";
+            this.radGridView1.Size = new System.Drawing.Size(662, 272);
+            this.radGridView1.TabIndex = 3;
+            this.radGridView1.Text = "radGridView1";
+            // 
+            // comboBox7
+            // 
+            this.comboBox7.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox7.FormattingEnabled = true;
+            this.comboBox7.Location = new System.Drawing.Point(248, 117);
+            this.comboBox7.Name = "comboBox7";
+            this.comboBox7.Size = new System.Drawing.Size(148, 21);
+            this.comboBox7.TabIndex = 2;
+            // 
+            // comboBox8
+            // 
+            this.comboBox8.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox8.FormattingEnabled = true;
+            this.comboBox8.Location = new System.Drawing.Point(159, 17);
+            this.comboBox8.Name = "comboBox8";
+            this.comboBox8.Size = new System.Drawing.Size(130, 21);
+            this.comboBox8.TabIndex = 0;
+            // 
+            // comboBox9
+            // 
+            this.comboBox9.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox9.FormattingEnabled = true;
+            this.comboBox9.Location = new System.Drawing.Point(315, 17);
+            this.comboBox9.Name = "comboBox9";
+            this.comboBox9.Size = new System.Drawing.Size(130, 21);
+            this.comboBox9.TabIndex = 0;
+            // 
+            // radTextBox2
+            // 
+            this.radTextBox2.Location = new System.Drawing.Point(89, 74);
+            this.radTextBox2.Name = "radTextBox2";
+            this.radTextBox2.Size = new System.Drawing.Size(117, 24);
+            this.radTextBox2.TabIndex = 1;
+            this.radTextBox2.ThemeName = "VisualStudio2012Light";
+            // 
+            // radTextBox3
+            // 
+            this.radTextBox3.Location = new System.Drawing.Point(212, 74);
+            this.radTextBox3.Name = "radTextBox3";
+            this.radTextBox3.Size = new System.Drawing.Size(117, 24);
+            this.radTextBox3.TabIndex = 1;
+            this.radTextBox3.ThemeName = "VisualStudio2012Light";
+            // 
+            // radTextBox4
+            // 
+            this.radTextBox4.Location = new System.Drawing.Point(335, 74);
+            this.radTextBox4.Name = "radTextBox4";
+            this.radTextBox4.Size = new System.Drawing.Size(117, 24);
+            this.radTextBox4.TabIndex = 1;
+            this.radTextBox4.ThemeName = "VisualStudio2012Light";
+            // 
+            // radTextBox5
+            // 
+            this.radTextBox5.Location = new System.Drawing.Point(458, 74);
+            this.radTextBox5.Name = "radTextBox5";
+            this.radTextBox5.Size = new System.Drawing.Size(117, 24);
+            this.radTextBox5.TabIndex = 1;
+            this.radTextBox5.ThemeName = "VisualStudio2012Light";
+            // 
+            // comboBox10
+            // 
+            this.comboBox10.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox10.FormattingEnabled = true;
+            this.comboBox10.Location = new System.Drawing.Point(89, 100);
+            this.comboBox10.Name = "comboBox10";
+            this.comboBox10.Size = new System.Drawing.Size(117, 21);
+            this.comboBox10.TabIndex = 0;
+            this.comboBox10.Visible = false;
+            // 
+            // comboBox11
+            // 
+            this.comboBox11.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox11.FormattingEnabled = true;
+            this.comboBox11.Location = new System.Drawing.Point(212, 100);
+            this.comboBox11.Name = "comboBox11";
+            this.comboBox11.Size = new System.Drawing.Size(117, 21);
+            this.comboBox11.TabIndex = 0;
+            this.comboBox11.Visible = false;
+            // 
+            // comboBox12
+            // 
+            this.comboBox12.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox12.FormattingEnabled = true;
+            this.comboBox12.Location = new System.Drawing.Point(335, 100);
+            this.comboBox12.Name = "comboBox12";
+            this.comboBox12.Size = new System.Drawing.Size(117, 21);
+            this.comboBox12.TabIndex = 0;
+            this.comboBox12.Visible = false;
+            // 
+            // comboBox13
+            // 
+            this.comboBox13.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox13.FormattingEnabled = true;
+            this.comboBox13.Location = new System.Drawing.Point(458, 100);
+            this.comboBox13.Name = "comboBox13";
+            this.comboBox13.Size = new System.Drawing.Size(117, 21);
+            this.comboBox13.TabIndex = 0;
+            this.comboBox13.Visible = false;
+            // 
+            // radioButton1
+            // 
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.Location = new System.Drawing.Point(89, 104);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(93, 17);
+            this.radioButton1.TabIndex = 2;
+            this.radioButton1.TabStop = true;
+            this.radioButton1.Text = "Правильный";
+            this.radioButton1.UseVisualStyleBackColor = true;
+            this.radioButton1.Visible = false;
+            // 
+            // radioButton2
+            // 
+            this.radioButton2.AutoSize = true;
+            this.radioButton2.Location = new System.Drawing.Point(212, 104);
+            this.radioButton2.Name = "radioButton2";
+            this.radioButton2.Size = new System.Drawing.Size(93, 17);
+            this.radioButton2.TabIndex = 2;
+            this.radioButton2.TabStop = true;
+            this.radioButton2.Text = "Правильный";
+            this.radioButton2.UseVisualStyleBackColor = true;
+            this.radioButton2.Visible = false;
+            // 
+            // radioButton3
+            // 
+            this.radioButton3.AutoSize = true;
+            this.radioButton3.Location = new System.Drawing.Point(335, 104);
+            this.radioButton3.Name = "radioButton3";
+            this.radioButton3.Size = new System.Drawing.Size(93, 17);
+            this.radioButton3.TabIndex = 2;
+            this.radioButton3.TabStop = true;
+            this.radioButton3.Text = "Правильный";
+            this.radioButton3.UseVisualStyleBackColor = true;
+            this.radioButton3.Visible = false;
+            // 
+            // radioButton4
+            // 
+            this.radioButton4.AutoSize = true;
+            this.radioButton4.Location = new System.Drawing.Point(458, 104);
+            this.radioButton4.Name = "radioButton4";
+            this.radioButton4.Size = new System.Drawing.Size(93, 17);
+            this.radioButton4.TabIndex = 2;
+            this.radioButton4.TabStop = true;
+            this.radioButton4.Text = "Правильный";
+            this.radioButton4.UseVisualStyleBackColor = true;
+            this.radioButton4.Visible = false;
+            // 
+            // radButton4
+            // 
+            this.radButton4.Location = new System.Drawing.Point(251, 151);
+            this.radButton4.Name = "radButton4";
+            this.radButton4.Size = new System.Drawing.Size(110, 24);
+            this.radButton4.TabIndex = 3;
+            this.radButton4.Text = "Сохранить";
+            this.radButton4.ThemeName = "VisualStudio2012Light";
+            // 
+            // radGridView2
+            // 
+            this.radGridView2.Location = new System.Drawing.Point(3, 214);
+            // 
+            // 
+            // 
+            this.radGridView2.MasterTemplate.ViewDefinition = tableViewDefinition7;
+            this.radGridView2.Name = "radGridView2";
+            this.radGridView2.Size = new System.Drawing.Size(662, 302);
+            this.radGridView2.TabIndex = 4;
+            this.radGridView2.Text = "radGridView2";
+            // 
             // AdminForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -453,6 +791,7 @@
             // 
             this.RootElement.ApplyShapeToControl = true;
             this.ShowIcon = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Администратор";
             this.ThemeName = "VisualStudio2012Light";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.AdminForm_FormClosed);
@@ -463,8 +802,6 @@
             this.radPageView1.ResumeLayout(false);
             this.radPageViewPage1.ResumeLayout(false);
             this.radPageViewPage1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.sectionsBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataBaseZKIDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DtGridViewTM.MasterTemplate)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DtGridViewTM)).EndInit();
@@ -483,13 +820,33 @@
             ((System.ComponentModel.ISupportInitialize)(this.radButton2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radButton1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.subjectsBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataBaseZKIDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.sectionsBindingSource1)).EndInit();
             this.tabPage2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.radGridView1.MasterTemplate)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sectionsBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.fKTextsSubjectsBindingSource)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.answersBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataBaseZKIDataSet1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.optionsBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radPageView2)).EndInit();
+            this.radPageView2.ResumeLayout(false);
+            this.radPageViewPage3.ResumeLayout(false);
+            this.radPageViewPage3.PerformLayout();
+            this.radPageViewPage4.ResumeLayout(false);
+            this.radPageViewPage4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.radButton3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radTextBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radGridView1.MasterTemplate)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radTextBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radTextBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radTextBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radTextBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radButton4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radGridView2.MasterTemplate)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radGridView2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -530,11 +887,41 @@
         private System.Windows.Forms.BindingSource fKTextsSubjectsBindingSource;
         private DataBaseZKIDataSetTableAdapters.TextsTableAdapter textsTableAdapter;
         private Telerik.WinControls.UI.RadTextBox txtNameText;
-        private Telerik.WinControls.UI.RadGridView radGridView1;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem менюToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem справкаToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem пользовательToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem выходToolStripMenuItem;
+        private System.Windows.Forms.BindingSource answersBindingSource;
+        private DataBaseZKIDataSetTableAdapters.AnswersTableAdapter answersTableAdapter;
+        private DataBaseZKIDataSet1 dataBaseZKIDataSet1;
+        private System.Windows.Forms.BindingSource optionsBindingSource;
+        private DataBaseZKIDataSet1TableAdapters.OptionsTableAdapter optionsTableAdapter;
+        private Telerik.WinControls.UI.RadPageView radPageView2;
+        private Telerik.WinControls.UI.RadPageViewPage radPageViewPage3;
+        private Telerik.WinControls.UI.RadPageViewPage radPageViewPage4;
+        private System.Windows.Forms.ComboBox comboBox6;
+        private System.Windows.Forms.ComboBox comboBox5;
+        private System.Windows.Forms.ComboBox comboBox4;
+        private Telerik.WinControls.UI.RadTextBox radTextBox1;
+        private Telerik.WinControls.UI.RadButton radButton3;
+        private Telerik.WinControls.UI.RadGridView radGridView1;
+        private System.Windows.Forms.ComboBox comboBox7;
+        private Telerik.WinControls.UI.RadTextBox radTextBox5;
+        private Telerik.WinControls.UI.RadTextBox radTextBox4;
+        private Telerik.WinControls.UI.RadTextBox radTextBox3;
+        private Telerik.WinControls.UI.RadTextBox radTextBox2;
+        private System.Windows.Forms.ComboBox comboBox9;
+        private System.Windows.Forms.ComboBox comboBox8;
+        private System.Windows.Forms.ComboBox comboBox13;
+        private System.Windows.Forms.ComboBox comboBox12;
+        private System.Windows.Forms.ComboBox comboBox11;
+        private System.Windows.Forms.ComboBox comboBox10;
+        private System.Windows.Forms.RadioButton radioButton4;
+        private System.Windows.Forms.RadioButton radioButton3;
+        private System.Windows.Forms.RadioButton radioButton2;
+        private System.Windows.Forms.RadioButton radioButton1;
+        private Telerik.WinControls.UI.RadButton radButton4;
+        private Telerik.WinControls.UI.RadGridView radGridView2;
     }
 }

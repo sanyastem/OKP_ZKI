@@ -12,9 +12,11 @@ namespace OKP_ZKI
 {
     public partial class InformationForm : Telerik.WinControls.UI.RadForm
     {
+        string nameAutoriseishen;
         int strOne = 0;
-        public InformationForm()
+        public InformationForm(string name)
         {
+            nameAutoriseishen = name;
             InitializeComponent();
         }
 
@@ -93,7 +95,7 @@ namespace OKP_ZKI
         private void btnTest_Click(object sender, EventArgs e)
         {
 
-            TestForm forms = new TestForm(strOne);
+            TestForm forms = new TestForm(strOne,nameAutoriseishen);
             forms.ShowDialog();
         }
     }
