@@ -277,6 +277,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DataBaseZKIDataSet1.xsd</DependentUpon>
     </Compile>
+    <Compile Include="DataBaseZKIDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataBaseZKIDataSet2.xsd</DependentUpon>
+    </Compile>
     <Compile Include="DBZKI.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -408,6 +413,17 @@
     </None>
     <None Include="DataBaseZKIDataSet1.xss">
       <DependentUpon>DataBaseZKIDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataBaseZKIDataSet2.xsc">
+      <DependentUpon>DataBaseZKIDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="DataBaseZKIDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataBaseZKIDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataBaseZKIDataSet2.xss">
+      <DependentUpon>DataBaseZKIDataSet2.xsd</DependentUpon>
     </None>
     <None Include="DBZKI.edmx.diagram">
       <DependentUpon>DBZKI.edmx</DependentUpon>

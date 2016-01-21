@@ -25,7 +25,7 @@ namespace OKP_ZKI
             // TODO: данная строка кода позволяет загрузить данные в таблицу "dataBaseZKIDataSet.Texts". При необходимости она может быть перемещена или удалена.
             this.textsTableAdapter.Fill(this.dataBaseZKIDataSet.Texts);
             treeView1.Nodes.Clear();
-            using (SqlConnection db = new SqlConnection(@"Data Source=АЛЕКСАНДР-ПК\SQLEXPRESS;Initial Catalog=DataBaseZKI;Integrated Security=True"))
+            using (SqlConnection db = new SqlConnection(@"Data Source=(local)\SQLEXPRESS;Initial Catalog=DataBaseZKI;Integrated Security=True"))
             {
                 db.Open();
                 SqlCommand one = new SqlCommand("SELECT Sections.Section,Subjects.Subject,Texts.titles FROM Sections,Subjects,Texts"

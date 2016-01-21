@@ -14,7 +14,7 @@ namespace OKP_ZKI
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new ScreensaverForm());
+            Application.Run(new AdminForm());
         }
     }
 }

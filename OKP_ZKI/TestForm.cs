@@ -24,9 +24,9 @@ namespace OKP_ZKI
             nameAutoriseishen = name;
             using (SqlConnection con = new SqlConnection(@"Data Source=АЛЕКСАНДР-ПК\SQLEXPRESS;Initial Catalog=DataBaseZKI;Integrated Security=True"))
             {
-                string zapros = string.Format("SELECT Questions.Question FROM Sections,Subjects,Texts,Questions"
- +" WHERE Sections.id_section = Subjects.id_section AND Subjects.id_subject = Texts.id_subject AND"
- +" Texts.id_text = '{0}'",str);
+                string zapros = string.Format("SELECT Questions.Question FROM Sections,Subjects,Texts,Questions,Tests "
++" WHERE Sections.id_section = Subjects.id_section AND Subjects.id_subject = Texts.id_subject AND Tests.id_test = Questions.id_test AND Texts.id_text = Tests.id_texts AND "
++" Texts.id_text = {0}",str);
                 con.Open();
                 SqlCommand db = new SqlCommand(zapros,con);
                 SqlDataReader one = db.ExecuteReader();
@@ -88,6 +88,10 @@ namespace OKP_ZKI
                     radCheckBox2.Visible = true;
                     radCheckBox3.Visible = true;
                     radCheckBox4.Visible = true;
+                    radCheckBox1.Text = da[0];
+                    radCheckBox2.Text = da[1];
+                    radCheckBox3.Text = da[2];
+                    radCheckBox4.Text = da[3];
                 }
             if (db.Option(write[1]))
             {

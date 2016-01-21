@@ -230,7 +230,7 @@
             this.radPageView1.ItemSizeMode = Telerik.WinControls.UI.PageViewItemSizeMode.EqualWidth;
             this.radPageView1.Location = new System.Drawing.Point(0, -5);
             this.radPageView1.Name = "radPageView1";
-            this.radPageView1.SelectedPage = this.radPageViewPage10;
+            this.radPageView1.SelectedPage = this.radPageViewPage1;
             this.radPageView1.Size = new System.Drawing.Size(478, 412);
             this.radPageView1.TabIndex = 0;
             this.radPageView1.Text = "1";

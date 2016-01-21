@@ -212,6 +212,186 @@ namespace DataBase
                  zapros.ExecuteNonQuery();
              }
          }
-
+         public DataSet SelectRazdel()
+         {
+             SqlConnection db = new SqlConnection(connection);
+             string command = "SELECT Sections.Section,Sections.id_section  FROM Sections";
+             SqlDataAdapter da = new SqlDataAdapter(command,connection);
+             DataSet ds = new DataSet();
+             db.Open();
+             da.Fill(ds);
+             db.Close();
+             return ds;
+         }
+         public DataSet SelectTem(int id)
+         {
+             SqlConnection db = new SqlConnection(connection);
+             string command = string.Format("SELECT Subjects.Subject ,Subjects.id_subject FROM Sections,Subjects "
++" WHERE Sections.id_section = Subjects.id_section AND Sections.id_section = '{0}'",id);
+             SqlDataAdapter da = new SqlDataAdapter(command, connection);
+             DataSet ds = new DataSet();
+             db.Open();
+             da.Fill(ds);
+             db.Close();
+             return ds;
+         }
+         public DataSet SelectText(string id)
+         {
+             SqlConnection db = new SqlConnection(connection);
+             string command = string.Format("SELECT Texts.id_text,Texts.titles FROM Texts,Subjects,Sections,Tests"
++" WHERE Subjects.id_subject = Texts.id_subject AND Texts.id_text = Tests.id_texts AND Sections.id_section = Subjects.id_section AND Subjects.Subject = '{0}'", id);
+             SqlDataAdapter da = new SqlDataAdapter(command, connection);
+             DataSet ds = new DataSet();
+             db.Open();
+             da.Fill(ds);
+             db.Close();
+             return ds;
+         }
+         public DataSet SelectQuestion(string id)
+         {
+             SqlConnection db = new SqlConnection(connection);
+             string command = string.Format("SELECT Questions.Question,Questions.id_question FROM Texts,Tests,Questions"
++ " WHERE Tests.id_test = Questions.id_test AND Tests.id_texts = Texts.id_text AND Texts.titles = '{0}'", id);
+             SqlDataAdapter da = new SqlDataAdapter(command, connection);
+             DataSet ds = new DataSet();
+             db.Open();
+             da.Fill(ds);
+             db.Close();
+             return ds;
+         }
+         public bool OptionsDD(string id)
+         {
+             SqlConnection db = new SqlConnection(connection);
+             db.Open();
+             string command = string.Format("SELECT Options.[Option] FROM Texts,Tests,Questions,Options"
++ " WHERE Questions.id_option = Options.id_options AND Tests.id_test = Questions.id_test AND Texts.id_text = Tests.id_texts AND Questions.Question Like '{0}'", id);
+             SqlCommand a = new SqlCommand(command, db);
+             if ((string)a.ExecuteScalar() == "Один ответ                                                                                          ")
+             {
+                 return true;
+             }
+             else
+             {
+                 return false;
+             }
+             db.Close();
+         }
+         public void SaveQuestion(string path, int id, int title)
+         {
+             using (SqlConnection sql = new SqlConnection(connection))
+             {
+                 string x = string.Format(@"INSERT INTO Questions(Question,id_test,id_option) VALUES ('{0}',{1},{2})", path, id, title);
+                 sql.Open();
+                 SqlCommand zapros = new SqlCommand();
+                 zapros.Connection = sql;
+                 zapros.CommandText = x;
+                 zapros.ExecuteNonQuery();
+             }
+         }
+         public int IDTest(string id)
+         {
+             SqlConnection db = new SqlConnection(connection);
+             db.Open();
+             string command = string.Format("SELECT Tests.id_test  FROM Tests,Texts "
++ " WHERE Texts.id_text = Tests.id_texts AND Texts.titles = '{0}'", id);
+             SqlCommand a = new SqlCommand(command, db);
+             return (int)a.ExecuteScalar();
+         }
+         public void SaveOtvet(string path, int id, int title)
+         {
+             using (SqlConnection sql = new SqlConnection(connection))
+             {
+                 string x = string.Format(@"INSERT INTO Answers(Answer,id_question,[right]) VALUES ('{0}',{1},{2})", path, id, title);
+                 sql.Open();
+                 SqlCommand zapros = new SqlCommand();
+                 zapros.Connection = sql;
+                 zapros.CommandText = x;
+                 zapros.ExecuteNonQuery();
+             }
+         }
+         public string IDQuestion(string id)
+         {
+             SqlConnection db = new SqlConnection(connection);
+             db.Open();
+             string command = string.Format("SELECT Questions.id_question  FROM Questions"
++" WHERE Questions.Question LIKE '{0}'", id);
+             SqlCommand a = new SqlCommand(command, db);
+             return a.ExecuteScalar().ToString();
+         }
+         public DataSet SelectTextFULL(string id)
+         {
+             SqlConnection db = new SqlConnection(connection);
+             string command = string.Format("SELECT Texts.id_text,Texts.titles FROM Texts,Subjects,Sections"
++ " WHERE Subjects.id_subject = Texts.id_subject AND Sections.id_section = Subjects.id_section AND Subjects.Subject = '{0}'", id);
+             SqlDataAdapter da = new SqlDataAdapter(command, connection);
+             DataSet ds = new DataSet();
+             db.Open();
+             da.Fill(ds);
+             db.Close();
+             return ds;
+         }
+         public void AddTest(int path)
+         {
+             using (SqlConnection sql = new SqlConnection(connection))
+             {
+                 string x = string.Format("INSERT INTO Tests(id_texts) VALUES({0})" ,path);
+                 sql.Open();
+                 SqlCommand zapros = new SqlCommand();
+                 zapros.Connection = sql;
+                 zapros.CommandText = x;
+                 zapros.ExecuteNonQuery();
+             }
+         }
+         public int IDText(string id)
+         {
+             SqlConnection db = new SqlConnection(connection);
+             db.Open();
+             string command = string.Format("SELECT Texts.id_text  FROM Texts "
++" WHERE Texts.titles = '{0}'", id);
+             SqlCommand a = new SqlCommand(command, db);
+             return (int)a.ExecuteScalar();
+         }
+         public bool QuestionSoc(string txt)
+         {
+             using (SqlConnection sql = new SqlConnection(connection))
+             {
+                 sql.Open();
+                 string x = string.Format("SELECT Questions.Question,Questions.id_question FROM Texts,Tests,Questions"
++ " WHERE Tests.id_test = Questions.id_test AND Tests.id_texts = Texts.id_text AND Texts.titles = '{0}'", txt);
+                 SqlCommand zapros = new SqlCommand(x, sql);
+                 SqlDataReader h = zapros.ExecuteReader();
+                 int count = 0;
+                 while (h.Read())
+                 {
+                     count++;
+                 }
+                 if (count >=10)
+                 {
+                     return true;
+                 }
+                 else return false;
+             }
+         }
+         public bool OtvetSoc(string txt)
+         {
+             using (SqlConnection sql = new SqlConnection(connection))
+             {
+                 sql.Open();
+                 string x = string.Format("SELECT Answers.Answer  FROM Answers,Questions"
++" WHERE Questions.id_question = Answers.id_question AND Questions.Question LIKE '{0}'", txt);
+                 SqlCommand zapros = new SqlCommand(x, sql);
+                 SqlDataReader h = zapros.ExecuteReader();
+                 int count = 0;
+                 while (h.Read())
+                 {
+                     count++;
+                 }
+                 if (count >= 4)
+                 {
+                     return true;
+                 }
+                 else return false;
+             }
+         }
     }
 }
