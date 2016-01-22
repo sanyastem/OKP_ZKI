@@ -43,6 +43,7 @@
             this.справкаToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.администраторToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.выходToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.результатToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.dataBaseZKIDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textsBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnTest)).BeginInit();
@@ -95,7 +96,8 @@
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.менюToolStripMenuItem});
+            this.менюToolStripMenuItem,
+            this.результатToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(890, 24);
@@ -117,6 +119,7 @@
             this.справкаToolStripMenuItem.Name = "справкаToolStripMenuItem";
             this.справкаToolStripMenuItem.Size = new System.Drawing.Size(158, 22);
             this.справкаToolStripMenuItem.Text = "Справка";
+            this.справкаToolStripMenuItem.Click += new System.EventHandler(this.справкаToolStripMenuItem_Click);
             // 
             // администраторToolStripMenuItem
             // 
@@ -131,6 +134,13 @@
             this.выходToolStripMenuItem.Size = new System.Drawing.Size(158, 22);
             this.выходToolStripMenuItem.Text = "Выход";
             this.выходToolStripMenuItem.Click += new System.EventHandler(this.выходToolStripMenuItem_Click);
+            // 
+            // результатToolStripMenuItem
+            // 
+            this.результатToolStripMenuItem.Name = "результатToolStripMenuItem";
+            this.результатToolStripMenuItem.Size = new System.Drawing.Size(69, 20);
+            this.результатToolStripMenuItem.Text = "Результат";
+            this.результатToolStripMenuItem.Click += new System.EventHandler(this.результатToolStripMenuItem_Click);
             // 
             // InformationForm
             // 
@@ -180,5 +190,6 @@
         private System.Windows.Forms.ToolStripMenuItem справкаToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem администраторToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem выходToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem результатToolStripMenuItem;
     }
 }

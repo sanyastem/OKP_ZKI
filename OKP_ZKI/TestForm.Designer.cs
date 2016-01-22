@@ -230,7 +230,7 @@
             this.radPageView1.ItemSizeMode = Telerik.WinControls.UI.PageViewItemSizeMode.EqualWidth;
             this.radPageView1.Location = new System.Drawing.Point(0, -5);
             this.radPageView1.Name = "radPageView1";
-            this.radPageView1.SelectedPage = this.radPageViewPage1;
+            this.radPageView1.SelectedPage = this.radPageViewPage3;
             this.radPageView1.Size = new System.Drawing.Size(478, 412);
             this.radPageView1.TabIndex = 0;
             this.radPageView1.Text = "1";
@@ -303,7 +303,7 @@
             // 
             this.radioButton1.AllowDrop = true;
             this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(177, 114);
+            this.radioButton1.Location = new System.Drawing.Point(177, 123);
             this.radioButton1.Name = "radioButton1";
             this.radioButton1.Size = new System.Drawing.Size(94, 17);
             this.radioButton1.TabIndex = 5;
@@ -314,7 +314,7 @@
             // 
             // radCheckBox1
             // 
-            this.radCheckBox1.Location = new System.Drawing.Point(174, 111);
+            this.radCheckBox1.Location = new System.Drawing.Point(174, 120);
             this.radCheckBox1.Name = "radCheckBox1";
             this.radCheckBox1.Size = new System.Drawing.Size(94, 18);
             this.radCheckBox1.TabIndex = 4;
@@ -428,7 +428,7 @@
             // 
             this.radioButton8.AllowDrop = true;
             this.radioButton8.AutoSize = true;
-            this.radioButton8.Location = new System.Drawing.Point(187, 110);
+            this.radioButton8.Location = new System.Drawing.Point(187, 118);
             this.radioButton8.Name = "radioButton8";
             this.radioButton8.Size = new System.Drawing.Size(94, 17);
             this.radioButton8.TabIndex = 16;
@@ -439,7 +439,7 @@
             // 
             // radCheckBox8
             // 
-            this.radCheckBox8.Location = new System.Drawing.Point(180, 114);
+            this.radCheckBox8.Location = new System.Drawing.Point(180, 122);
             this.radCheckBox8.Name = "radCheckBox8";
             this.radCheckBox8.Size = new System.Drawing.Size(94, 18);
             this.radCheckBox8.TabIndex = 12;
@@ -553,7 +553,7 @@
             // 
             this.radioButton12.AllowDrop = true;
             this.radioButton12.AutoSize = true;
-            this.radioButton12.Location = new System.Drawing.Point(184, 110);
+            this.radioButton12.Location = new System.Drawing.Point(184, 120);
             this.radioButton12.Name = "radioButton12";
             this.radioButton12.Size = new System.Drawing.Size(100, 17);
             this.radioButton12.TabIndex = 20;
@@ -564,7 +564,7 @@
             // 
             // radCheckBox12
             // 
-            this.radCheckBox12.Location = new System.Drawing.Point(180, 114);
+            this.radCheckBox12.Location = new System.Drawing.Point(180, 124);
             this.radCheckBox12.Name = "radCheckBox12";
             this.radCheckBox12.Size = new System.Drawing.Size(100, 18);
             this.radCheckBox12.TabIndex = 4;

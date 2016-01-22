@@ -32,9 +32,13 @@
             this.txtLogin = new Telerik.WinControls.UI.RadTextBox();
             this.txtPassword = new Telerik.WinControls.UI.RadTextBox();
             this.btnAuto = new Telerik.WinControls.UI.RadButton();
+            this.radLabel19 = new Telerik.WinControls.UI.RadLabel();
+            this.radLabel1 = new Telerik.WinControls.UI.RadLabel();
             ((System.ComponentModel.ISupportInitialize)(this.txtLogin)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtPassword)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnAuto)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radLabel19)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radLabel1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             this.SuspendLayout();
             // 
@@ -67,11 +71,29 @@
             this.btnAuto.ThemeName = "VisualStudio2012Light";
             this.btnAuto.Click += new System.EventHandler(this.btnAuto_Click);
             // 
+            // radLabel19
+            // 
+            this.radLabel19.Location = new System.Drawing.Point(91, 16);
+            this.radLabel19.Name = "radLabel19";
+            this.radLabel19.Size = new System.Drawing.Size(38, 18);
+            this.radLabel19.TabIndex = 14;
+            this.radLabel19.Text = "Логин";
+            // 
+            // radLabel1
+            // 
+            this.radLabel1.Location = new System.Drawing.Point(91, 64);
+            this.radLabel1.Name = "radLabel1";
+            this.radLabel1.Size = new System.Drawing.Size(45, 18);
+            this.radLabel1.TabIndex = 14;
+            this.radLabel1.Text = "Пароль";
+            // 
             // AdminAutorizeishen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(244, 227);
+            this.Controls.Add(this.radLabel1);
+            this.Controls.Add(this.radLabel19);
             this.Controls.Add(this.btnAuto);
             this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.txtLogin);
@@ -89,6 +111,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.txtLogin)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtPassword)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnAuto)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radLabel19)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radLabel1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -101,5 +125,7 @@
         private Telerik.WinControls.UI.RadTextBox txtLogin;
         private Telerik.WinControls.UI.RadTextBox txtPassword;
         private Telerik.WinControls.UI.RadButton btnAuto;
+        private Telerik.WinControls.UI.RadLabel radLabel19;
+        private Telerik.WinControls.UI.RadLabel radLabel1;
     }
 }

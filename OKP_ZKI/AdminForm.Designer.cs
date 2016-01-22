@@ -29,18 +29,16 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            Telerik.WinControls.UI.TableViewDefinition tableViewDefinition5 = new Telerik.WinControls.UI.TableViewDefinition();
-            Telerik.WinControls.UI.TableViewDefinition tableViewDefinition6 = new Telerik.WinControls.UI.TableViewDefinition();
-            Telerik.WinControls.UI.TableViewDefinition tableViewDefinition7 = new Telerik.WinControls.UI.TableViewDefinition();
-            Telerik.WinControls.UI.TableViewDefinition tableViewDefinition8 = new Telerik.WinControls.UI.TableViewDefinition();
             this.visualStudio2012LightTheme1 = new Telerik.WinControls.Themes.VisualStudio2012LightTheme();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.radPageView1 = new Telerik.WinControls.UI.RadPageView();
             this.radPageViewPage1 = new Telerik.WinControls.UI.RadPageViewPage();
+            this.radButton7 = new Telerik.WinControls.UI.RadButton();
+            this.radButton6 = new Telerik.WinControls.UI.RadButton();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.radLabel2 = new Telerik.WinControls.UI.RadLabel();
-            this.DtGridViewTM = new Telerik.WinControls.UI.RadGridView();
             this.txtRazd = new Telerik.WinControls.UI.RadTextBoxControl();
             this.txtTema = new Telerik.WinControls.UI.RadTextBoxControl();
             this.BtnSaveRaz = new Telerik.WinControls.UI.RadButton();
@@ -48,18 +46,26 @@
             this.radLabel3 = new Telerik.WinControls.UI.RadLabel();
             this.radLabel1 = new Telerik.WinControls.UI.RadLabel();
             this.radPageViewPage2 = new Telerik.WinControls.UI.RadPageViewPage();
+            this.radButton8 = new Telerik.WinControls.UI.RadButton();
+            this.radButton9 = new Telerik.WinControls.UI.RadButton();
+            this.radLabel8 = new Telerik.WinControls.UI.RadLabel();
+            this.radLabel7 = new Telerik.WinControls.UI.RadLabel();
+            this.radLabel6 = new Telerik.WinControls.UI.RadLabel();
+            this.radLabel5 = new Telerik.WinControls.UI.RadLabel();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.txtNameText = new Telerik.WinControls.UI.RadTextBox();
-            this.TextGridview = new Telerik.WinControls.UI.RadGridView();
             this.txtPath = new Telerik.WinControls.UI.RadTextBox();
             this.radButton2 = new Telerik.WinControls.UI.RadButton();
             this.radButton1 = new Telerik.WinControls.UI.RadButton();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.sectionsBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.dataBaseZKIDataSet = new OKP_ZKI.DataBaseZKIDataSet();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.radPageView2 = new Telerik.WinControls.UI.RadPageView();
             this.radPageViewPage5 = new Telerik.WinControls.UI.RadPageViewPage();
+            this.radLabel11 = new Telerik.WinControls.UI.RadLabel();
+            this.radLabel10 = new Telerik.WinControls.UI.RadLabel();
+            this.radLabel9 = new Telerik.WinControls.UI.RadLabel();
             this.radButton5 = new Telerik.WinControls.UI.RadButton();
             this.comboBox14 = new System.Windows.Forms.ComboBox();
             this.comboBox15 = new System.Windows.Forms.ComboBox();
@@ -67,8 +73,14 @@
             this.sectionsBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.dataBaseZKIDataSet2 = new OKP_ZKI.DataBaseZKIDataSet2();
             this.radPageViewPage3 = new Telerik.WinControls.UI.RadPageViewPage();
-            this.radLabel4 = new Telerik.WinControls.UI.RadLabel();
-            this.radGridView1 = new Telerik.WinControls.UI.RadGridView();
+            this.radButton10 = new Telerik.WinControls.UI.RadButton();
+            this.radButton11 = new Telerik.WinControls.UI.RadButton();
+            this.radLabel16 = new Telerik.WinControls.UI.RadLabel();
+            this.radLabel15 = new Telerik.WinControls.UI.RadLabel();
+            this.radLabel14 = new Telerik.WinControls.UI.RadLabel();
+            this.radLabel13 = new Telerik.WinControls.UI.RadLabel();
+            this.radLabel12 = new Telerik.WinControls.UI.RadLabel();
+            this.dataGridView3 = new System.Windows.Forms.DataGridView();
             this.comboBox7 = new System.Windows.Forms.ComboBox();
             this.optionsBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.comboBox6 = new System.Windows.Forms.ComboBox();
@@ -77,7 +89,15 @@
             this.radTextBox1 = new Telerik.WinControls.UI.RadTextBox();
             this.radButton3 = new Telerik.WinControls.UI.RadButton();
             this.radPageViewPage4 = new Telerik.WinControls.UI.RadPageViewPage();
-            this.radGridView2 = new Telerik.WinControls.UI.RadGridView();
+            this.radButton12 = new Telerik.WinControls.UI.RadButton();
+            this.radButton13 = new Telerik.WinControls.UI.RadButton();
+            this.radLabel22 = new Telerik.WinControls.UI.RadLabel();
+            this.radLabel21 = new Telerik.WinControls.UI.RadLabel();
+            this.radLabel20 = new Telerik.WinControls.UI.RadLabel();
+            this.radLabel19 = new Telerik.WinControls.UI.RadLabel();
+            this.radLabel18 = new Telerik.WinControls.UI.RadLabel();
+            this.radLabel17 = new Telerik.WinControls.UI.RadLabel();
+            this.dataGridView4 = new System.Windows.Forms.DataGridView();
             this.radButton4 = new Telerik.WinControls.UI.RadButton();
             this.radioButton4 = new System.Windows.Forms.RadioButton();
             this.radioButton3 = new System.Windows.Forms.RadioButton();
@@ -114,14 +134,17 @@
             this.sectionsTableAdapter1 = new OKP_ZKI.DataBaseZKIDataSet2TableAdapters.SectionsTableAdapter();
             this.optionsTableAdapter1 = new OKP_ZKI.DataBaseZKIDataSet2TableAdapters.OptionsTableAdapter();
             this.textsTableAdapter1 = new OKP_ZKI.DataBaseZKIDataSet2TableAdapters.TextsTableAdapter();
+            this.dataBaseZKIDataSet21 = new OKP_ZKI.DataBaseZKIDataSet2();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.radPageView1)).BeginInit();
             this.radPageView1.SuspendLayout();
             this.radPageViewPage1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.radButton7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radButton6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.DtGridViewTM)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.DtGridViewTM.MasterTemplate)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtRazd)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtTema)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BtnSaveRaz)).BeginInit();
@@ -129,9 +152,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.radLabel3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel1)).BeginInit();
             this.radPageViewPage2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.radButton8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radButton9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radLabel8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radLabel7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radLabel6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radLabel5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtNameText)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TextGridview)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TextGridview.MasterTemplate)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtPath)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radButton2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radButton1)).BeginInit();
@@ -141,19 +169,34 @@
             ((System.ComponentModel.ISupportInitialize)(this.radPageView2)).BeginInit();
             this.radPageView2.SuspendLayout();
             this.radPageViewPage5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.radLabel11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radLabel10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radLabel9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radButton5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sectionsBindingSource2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataBaseZKIDataSet2)).BeginInit();
             this.radPageViewPage3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.radLabel4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radGridView1.MasterTemplate)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radButton10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radButton11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radLabel16)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radLabel15)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radLabel14)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radLabel13)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radLabel12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.optionsBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radTextBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radButton3)).BeginInit();
             this.radPageViewPage4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.radGridView2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radGridView2.MasterTemplate)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radButton12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radButton13)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radLabel22)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radLabel21)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radLabel20)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radLabel19)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radLabel18)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radLabel17)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radButton4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radTextBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radTextBox4)).BeginInit();
@@ -167,6 +210,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.answersBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataBaseZKIDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.optionsBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataBaseZKIDataSet21)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             this.SuspendLayout();
             // 
@@ -211,9 +255,11 @@
             // 
             // radPageViewPage1
             // 
+            this.radPageViewPage1.Controls.Add(this.radButton7);
+            this.radPageViewPage1.Controls.Add(this.radButton6);
+            this.radPageViewPage1.Controls.Add(this.dataGridView1);
             this.radPageViewPage1.Controls.Add(this.comboBox3);
             this.radPageViewPage1.Controls.Add(this.radLabel2);
-            this.radPageViewPage1.Controls.Add(this.DtGridViewTM);
             this.radPageViewPage1.Controls.Add(this.txtRazd);
             this.radPageViewPage1.Controls.Add(this.txtTema);
             this.radPageViewPage1.Controls.Add(this.BtnSaveRaz);
@@ -226,6 +272,34 @@
             this.radPageViewPage1.Size = new System.Drawing.Size(658, 509);
             this.radPageViewPage1.Text = "Тема";
             this.radPageViewPage1.Paint += new System.Windows.Forms.PaintEventHandler(this.radPageViewPage1_Paint);
+            // 
+            // radButton7
+            // 
+            this.radButton7.Location = new System.Drawing.Point(27, 149);
+            this.radButton7.Name = "radButton7";
+            this.radButton7.Size = new System.Drawing.Size(110, 24);
+            this.radButton7.TabIndex = 7;
+            this.radButton7.Text = "Удалить";
+            this.radButton7.Click += new System.EventHandler(this.radButton7_Click);
+            // 
+            // radButton6
+            // 
+            this.radButton6.Location = new System.Drawing.Point(528, 156);
+            this.radButton6.Name = "radButton6";
+            this.radButton6.Size = new System.Drawing.Size(110, 24);
+            this.radButton6.TabIndex = 7;
+            this.radButton6.Text = "Редактировать";
+            this.radButton6.Click += new System.EventHandler(this.radButton6_Click);
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
+            this.dataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCellsExceptHeaders;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(-5, 190);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(667, 316);
+            this.dataGridView1.TabIndex = 6;
             // 
             // comboBox3
             // 
@@ -245,18 +319,6 @@
             this.radLabel2.Size = new System.Drawing.Size(307, 52);
             this.radLabel2.TabIndex = 4;
             this.radLabel2.Text = "Все темы и разделы:";
-            // 
-            // DtGridViewTM
-            // 
-            this.DtGridViewTM.Location = new System.Drawing.Point(3, 179);
-            // 
-            // 
-            // 
-            this.DtGridViewTM.MasterTemplate.ViewDefinition = tableViewDefinition5;
-            this.DtGridViewTM.Name = "DtGridViewTM";
-            this.DtGridViewTM.Size = new System.Drawing.Size(652, 322);
-            this.DtGridViewTM.TabIndex = 3;
-            this.DtGridViewTM.Text = "radGridView1";
             // 
             // txtRazd
             // 
@@ -314,8 +376,14 @@
             // 
             // radPageViewPage2
             // 
+            this.radPageViewPage2.Controls.Add(this.radButton8);
+            this.radPageViewPage2.Controls.Add(this.radButton9);
+            this.radPageViewPage2.Controls.Add(this.radLabel8);
+            this.radPageViewPage2.Controls.Add(this.radLabel7);
+            this.radPageViewPage2.Controls.Add(this.radLabel6);
+            this.radPageViewPage2.Controls.Add(this.radLabel5);
+            this.radPageViewPage2.Controls.Add(this.dataGridView2);
             this.radPageViewPage2.Controls.Add(this.txtNameText);
-            this.radPageViewPage2.Controls.Add(this.TextGridview);
             this.radPageViewPage2.Controls.Add(this.txtPath);
             this.radPageViewPage2.Controls.Add(this.radButton2);
             this.radPageViewPage2.Controls.Add(this.radButton1);
@@ -327,6 +395,67 @@
             this.radPageViewPage2.Size = new System.Drawing.Size(658, 509);
             this.radPageViewPage2.Text = "Информация";
             // 
+            // radButton8
+            // 
+            this.radButton8.Location = new System.Drawing.Point(22, 214);
+            this.radButton8.Name = "radButton8";
+            this.radButton8.Size = new System.Drawing.Size(110, 24);
+            this.radButton8.TabIndex = 12;
+            this.radButton8.Text = "Удалить";
+            this.radButton8.Click += new System.EventHandler(this.radButton8_Click);
+            // 
+            // radButton9
+            // 
+            this.radButton9.Location = new System.Drawing.Point(523, 221);
+            this.radButton9.Name = "radButton9";
+            this.radButton9.Size = new System.Drawing.Size(110, 24);
+            this.radButton9.TabIndex = 13;
+            this.radButton9.Text = "Редактировать";
+            this.radButton9.Click += new System.EventHandler(this.radButton9_Click);
+            // 
+            // radLabel8
+            // 
+            this.radLabel8.Location = new System.Drawing.Point(140, 176);
+            this.radLabel8.Name = "radLabel8";
+            this.radLabel8.Size = new System.Drawing.Size(35, 17);
+            this.radLabel8.TabIndex = 11;
+            this.radLabel8.Text = "<html><span style=\"font-family: tempus sans itc\"><strong>Файл</strong></span></ht" +
+    "ml>";
+            // 
+            // radLabel7
+            // 
+            this.radLabel7.Location = new System.Drawing.Point(128, 136);
+            this.radLabel7.Name = "radLabel7";
+            this.radLabel7.Size = new System.Drawing.Size(56, 18);
+            this.radLabel7.TabIndex = 10;
+            this.radLabel7.Text = "Название";
+            // 
+            // radLabel6
+            // 
+            this.radLabel6.Location = new System.Drawing.Point(134, 71);
+            this.radLabel6.Name = "radLabel6";
+            this.radLabel6.Size = new System.Drawing.Size(32, 18);
+            this.radLabel6.TabIndex = 9;
+            this.radLabel6.Text = "Тема";
+            // 
+            // radLabel5
+            // 
+            this.radLabel5.Location = new System.Drawing.Point(134, 28);
+            this.radLabel5.Name = "radLabel5";
+            this.radLabel5.Size = new System.Drawing.Size(41, 18);
+            this.radLabel5.TabIndex = 8;
+            this.radLabel5.Text = "Раздел";
+            // 
+            // dataGridView2
+            // 
+            this.dataGridView2.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
+            this.dataGridView2.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCellsExceptHeaders;
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.Location = new System.Drawing.Point(-4, 252);
+            this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.Size = new System.Drawing.Size(667, 257);
+            this.dataGridView2.TabIndex = 7;
+            // 
             // txtNameText
             // 
             this.txtNameText.Location = new System.Drawing.Point(190, 130);
@@ -334,19 +463,6 @@
             this.txtNameText.Size = new System.Drawing.Size(121, 24);
             this.txtNameText.TabIndex = 4;
             this.txtNameText.ThemeName = "VisualStudio2012Light";
-            // 
-            // TextGridview
-            // 
-            this.TextGridview.Location = new System.Drawing.Point(0, 266);
-            // 
-            // 
-            // 
-            this.TextGridview.MasterTemplate.ViewDefinition = tableViewDefinition6;
-            this.TextGridview.Name = "TextGridview";
-            this.TextGridview.Size = new System.Drawing.Size(661, 243);
-            this.TextGridview.TabIndex = 3;
-            this.TextGridview.Text = "radGridView1";
-            this.TextGridview.ThemeName = "VisualStudio2012Light";
             // 
             // txtPath
             // 
@@ -388,19 +504,6 @@
             this.comboBox2.TabIndex = 0;
             this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
             // 
-            // comboBox1
-            // 
-            this.comboBox1.DataSource = this.sectionsBindingSource1;
-            this.comboBox1.DisplayMember = "Section";
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(190, 28);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 0;
-            this.comboBox1.ValueMember = "id_section";
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
-            // 
             // sectionsBindingSource1
             // 
             this.sectionsBindingSource1.DataMember = "Sections";
@@ -430,7 +533,7 @@
             this.radPageView2.ItemSizeMode = ((Telerik.WinControls.UI.PageViewItemSizeMode)((Telerik.WinControls.UI.PageViewItemSizeMode.EqualWidth | Telerik.WinControls.UI.PageViewItemSizeMode.EqualHeight)));
             this.radPageView2.Location = new System.Drawing.Point(6, 6);
             this.radPageView2.Name = "radPageView2";
-            this.radPageView2.SelectedPage = this.radPageViewPage4;
+            this.radPageView2.SelectedPage = this.radPageViewPage5;
             this.radPageView2.Size = new System.Drawing.Size(670, 605);
             this.radPageView2.TabIndex = 0;
             this.radPageView2.Text = "radPageView2";
@@ -439,6 +542,9 @@
             // 
             // radPageViewPage5
             // 
+            this.radPageViewPage5.Controls.Add(this.radLabel11);
+            this.radPageViewPage5.Controls.Add(this.radLabel10);
+            this.radPageViewPage5.Controls.Add(this.radLabel9);
             this.radPageViewPage5.Controls.Add(this.radButton5);
             this.radPageViewPage5.Controls.Add(this.comboBox14);
             this.radPageViewPage5.Controls.Add(this.comboBox15);
@@ -449,9 +555,33 @@
             this.radPageViewPage5.Size = new System.Drawing.Size(660, 488);
             this.radPageViewPage5.Text = "Тест";
             // 
+            // radLabel11
+            // 
+            this.radLabel11.Location = new System.Drawing.Point(199, 189);
+            this.radLabel11.Name = "radLabel11";
+            this.radLabel11.Size = new System.Drawing.Size(32, 18);
+            this.radLabel11.TabIndex = 11;
+            this.radLabel11.Text = "Тема";
+            // 
+            // radLabel10
+            // 
+            this.radLabel10.Location = new System.Drawing.Point(199, 150);
+            this.radLabel10.Name = "radLabel10";
+            this.radLabel10.Size = new System.Drawing.Size(41, 18);
+            this.radLabel10.TabIndex = 11;
+            this.radLabel10.Text = "Раздел";
+            // 
+            // radLabel9
+            // 
+            this.radLabel9.Location = new System.Drawing.Point(199, 228);
+            this.radLabel9.Name = "radLabel9";
+            this.radLabel9.Size = new System.Drawing.Size(56, 18);
+            this.radLabel9.TabIndex = 11;
+            this.radLabel9.Text = "Название";
+            // 
             // radButton5
             // 
-            this.radButton5.Location = new System.Drawing.Point(272, 119);
+            this.radButton5.Location = new System.Drawing.Point(281, 264);
             this.radButton5.Name = "radButton5";
             this.radButton5.Size = new System.Drawing.Size(110, 24);
             this.radButton5.TabIndex = 6;
@@ -463,7 +593,7 @@
             // 
             this.comboBox14.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox14.FormattingEnabled = true;
-            this.comboBox14.Location = new System.Drawing.Point(252, 80);
+            this.comboBox14.Location = new System.Drawing.Point(261, 225);
             this.comboBox14.Name = "comboBox14";
             this.comboBox14.Size = new System.Drawing.Size(148, 21);
             this.comboBox14.TabIndex = 3;
@@ -472,7 +602,7 @@
             // 
             this.comboBox15.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox15.FormattingEnabled = true;
-            this.comboBox15.Location = new System.Drawing.Point(252, 44);
+            this.comboBox15.Location = new System.Drawing.Point(261, 189);
             this.comboBox15.Name = "comboBox15";
             this.comboBox15.Size = new System.Drawing.Size(148, 21);
             this.comboBox15.TabIndex = 4;
@@ -484,7 +614,7 @@
             this.comboBox16.DisplayMember = "Section";
             this.comboBox16.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox16.FormattingEnabled = true;
-            this.comboBox16.Location = new System.Drawing.Point(252, 3);
+            this.comboBox16.Location = new System.Drawing.Point(261, 148);
             this.comboBox16.Name = "comboBox16";
             this.comboBox16.Size = new System.Drawing.Size(148, 21);
             this.comboBox16.TabIndex = 5;
@@ -503,8 +633,14 @@
             // 
             // radPageViewPage3
             // 
-            this.radPageViewPage3.Controls.Add(this.radLabel4);
-            this.radPageViewPage3.Controls.Add(this.radGridView1);
+            this.radPageViewPage3.Controls.Add(this.radButton10);
+            this.radPageViewPage3.Controls.Add(this.radButton11);
+            this.radPageViewPage3.Controls.Add(this.radLabel16);
+            this.radPageViewPage3.Controls.Add(this.radLabel15);
+            this.radPageViewPage3.Controls.Add(this.radLabel14);
+            this.radPageViewPage3.Controls.Add(this.radLabel13);
+            this.radPageViewPage3.Controls.Add(this.radLabel12);
+            this.radPageViewPage3.Controls.Add(this.dataGridView3);
             this.radPageViewPage3.Controls.Add(this.comboBox7);
             this.radPageViewPage3.Controls.Add(this.comboBox6);
             this.radPageViewPage3.Controls.Add(this.comboBox5);
@@ -517,26 +653,71 @@
             this.radPageViewPage3.Size = new System.Drawing.Size(660, 488);
             this.radPageViewPage3.Text = "Вопрос";
             // 
-            // radLabel4
+            // radButton10
             // 
-            this.radLabel4.Location = new System.Drawing.Point(414, 83);
-            this.radLabel4.Name = "radLabel4";
-            this.radLabel4.Size = new System.Drawing.Size(55, 18);
-            this.radLabel4.TabIndex = 4;
-            this.radLabel4.Text = "radLabel4";
-            this.radLabel4.Visible = false;
+            this.radButton10.Location = new System.Drawing.Point(22, 191);
+            this.radButton10.Name = "radButton10";
+            this.radButton10.Size = new System.Drawing.Size(110, 24);
+            this.radButton10.TabIndex = 12;
+            this.radButton10.Text = "Удалить";
+            this.radButton10.Click += new System.EventHandler(this.radButton10_Click);
             // 
-            // radGridView1
+            // radButton11
             // 
-            this.radGridView1.Location = new System.Drawing.Point(0, 241);
+            this.radButton11.Location = new System.Drawing.Point(523, 191);
+            this.radButton11.Name = "radButton11";
+            this.radButton11.Size = new System.Drawing.Size(110, 24);
+            this.radButton11.TabIndex = 13;
+            this.radButton11.Text = "Редактировать";
+            this.radButton11.Click += new System.EventHandler(this.radButton11_Click);
             // 
+            // radLabel16
             // 
+            this.radLabel16.Location = new System.Drawing.Point(186, 155);
+            this.radLabel16.Name = "radLabel16";
+            this.radLabel16.Size = new System.Drawing.Size(44, 18);
+            this.radLabel16.TabIndex = 11;
+            this.radLabel16.Text = "Вопрос";
             // 
-            this.radGridView1.MasterTemplate.ViewDefinition = tableViewDefinition7;
-            this.radGridView1.Name = "radGridView1";
-            this.radGridView1.Size = new System.Drawing.Size(662, 272);
-            this.radGridView1.TabIndex = 3;
-            this.radGridView1.Text = "radGridView1";
+            // radLabel15
+            // 
+            this.radLabel15.Location = new System.Drawing.Point(186, 117);
+            this.radLabel15.Name = "radLabel15";
+            this.radLabel15.Size = new System.Drawing.Size(62, 18);
+            this.radLabel15.TabIndex = 11;
+            this.radLabel15.Text = "Тип ответа";
+            // 
+            // radLabel14
+            // 
+            this.radLabel14.Location = new System.Drawing.Point(186, 6);
+            this.radLabel14.Name = "radLabel14";
+            this.radLabel14.Size = new System.Drawing.Size(41, 18);
+            this.radLabel14.TabIndex = 11;
+            this.radLabel14.Text = "Раздел";
+            // 
+            // radLabel13
+            // 
+            this.radLabel13.Location = new System.Drawing.Point(186, 47);
+            this.radLabel13.Name = "radLabel13";
+            this.radLabel13.Size = new System.Drawing.Size(32, 18);
+            this.radLabel13.TabIndex = 11;
+            this.radLabel13.Text = "Тема";
+            // 
+            // radLabel12
+            // 
+            this.radLabel12.Location = new System.Drawing.Point(186, 83);
+            this.radLabel12.Name = "radLabel12";
+            this.radLabel12.Size = new System.Drawing.Size(56, 18);
+            this.radLabel12.TabIndex = 11;
+            this.radLabel12.Text = "Название";
+            // 
+            // dataGridView3
+            // 
+            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView3.Location = new System.Drawing.Point(0, 230);
+            this.dataGridView3.Name = "dataGridView3";
+            this.dataGridView3.Size = new System.Drawing.Size(667, 258);
+            this.dataGridView3.TabIndex = 7;
             // 
             // comboBox7
             // 
@@ -608,7 +789,15 @@
             // 
             // radPageViewPage4
             // 
-            this.radPageViewPage4.Controls.Add(this.radGridView2);
+            this.radPageViewPage4.Controls.Add(this.radButton12);
+            this.radPageViewPage4.Controls.Add(this.radButton13);
+            this.radPageViewPage4.Controls.Add(this.radLabel22);
+            this.radPageViewPage4.Controls.Add(this.radLabel21);
+            this.radPageViewPage4.Controls.Add(this.radLabel20);
+            this.radPageViewPage4.Controls.Add(this.radLabel19);
+            this.radPageViewPage4.Controls.Add(this.radLabel18);
+            this.radPageViewPage4.Controls.Add(this.radLabel17);
+            this.radPageViewPage4.Controls.Add(this.dataGridView4);
             this.radPageViewPage4.Controls.Add(this.radButton4);
             this.radPageViewPage4.Controls.Add(this.radioButton4);
             this.radPageViewPage4.Controls.Add(this.radioButton3);
@@ -630,17 +819,79 @@
             this.radPageViewPage4.Size = new System.Drawing.Size(660, 488);
             this.radPageViewPage4.Text = "Ответ";
             // 
-            // radGridView2
+            // radButton12
             // 
-            this.radGridView2.Location = new System.Drawing.Point(3, 214);
+            this.radButton12.Location = new System.Drawing.Point(21, 170);
+            this.radButton12.Name = "radButton12";
+            this.radButton12.Size = new System.Drawing.Size(110, 24);
+            this.radButton12.TabIndex = 14;
+            this.radButton12.Text = "Удалить";
+            this.radButton12.Click += new System.EventHandler(this.radButton12_Click);
             // 
+            // radButton13
             // 
+            this.radButton13.Location = new System.Drawing.Point(524, 170);
+            this.radButton13.Name = "radButton13";
+            this.radButton13.Size = new System.Drawing.Size(110, 24);
+            this.radButton13.TabIndex = 15;
+            this.radButton13.Text = "Редактировать";
+            this.radButton13.Click += new System.EventHandler(this.radButton13_Click);
             // 
-            this.radGridView2.MasterTemplate.ViewDefinition = tableViewDefinition8;
-            this.radGridView2.Name = "radGridView2";
-            this.radGridView2.Size = new System.Drawing.Size(662, 302);
-            this.radGridView2.TabIndex = 4;
-            this.radGridView2.Text = "radGridView2";
+            // radLabel22
+            // 
+            this.radLabel22.Location = new System.Drawing.Point(481, 50);
+            this.radLabel22.Name = "radLabel22";
+            this.radLabel22.Size = new System.Drawing.Size(58, 18);
+            this.radLabel22.TabIndex = 11;
+            this.radLabel22.Text = "Ответ №4";
+            // 
+            // radLabel21
+            // 
+            this.radLabel21.Location = new System.Drawing.Point(362, 50);
+            this.radLabel21.Name = "radLabel21";
+            this.radLabel21.Size = new System.Drawing.Size(58, 18);
+            this.radLabel21.TabIndex = 11;
+            this.radLabel21.Text = "Ответ №3";
+            // 
+            // radLabel20
+            // 
+            this.radLabel20.Location = new System.Drawing.Point(233, 50);
+            this.radLabel20.Name = "radLabel20";
+            this.radLabel20.Size = new System.Drawing.Size(58, 18);
+            this.radLabel20.TabIndex = 11;
+            this.radLabel20.Text = "Ответ №2";
+            // 
+            // radLabel19
+            // 
+            this.radLabel19.Location = new System.Drawing.Point(114, 50);
+            this.radLabel19.Name = "radLabel19";
+            this.radLabel19.Size = new System.Drawing.Size(58, 18);
+            this.radLabel19.TabIndex = 13;
+            this.radLabel19.Text = "Ответ №1";
+            // 
+            // radLabel18
+            // 
+            this.radLabel18.Location = new System.Drawing.Point(303, 19);
+            this.radLabel18.Name = "radLabel18";
+            this.radLabel18.Size = new System.Drawing.Size(44, 18);
+            this.radLabel18.TabIndex = 12;
+            this.radLabel18.Text = "Вопрос";
+            // 
+            // radLabel17
+            // 
+            this.radLabel17.Location = new System.Drawing.Point(97, 17);
+            this.radLabel17.Name = "radLabel17";
+            this.radLabel17.Size = new System.Drawing.Size(56, 18);
+            this.radLabel17.TabIndex = 11;
+            this.radLabel17.Text = "Название";
+            // 
+            // dataGridView4
+            // 
+            this.dataGridView4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView4.Location = new System.Drawing.Point(-2, 205);
+            this.dataGridView4.Name = "dataGridView4";
+            this.dataGridView4.Size = new System.Drawing.Size(667, 283);
+            this.dataGridView4.TabIndex = 7;
             // 
             // radButton4
             // 
@@ -736,7 +987,7 @@
             // 
             this.comboBox9.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox9.FormattingEnabled = true;
-            this.comboBox9.Location = new System.Drawing.Point(315, 17);
+            this.comboBox9.Location = new System.Drawing.Point(353, 17);
             this.comboBox9.Name = "comboBox9";
             this.comboBox9.Size = new System.Drawing.Size(130, 21);
             this.comboBox9.TabIndex = 0;
@@ -869,6 +1120,7 @@
             this.справкаToolStripMenuItem.Name = "справкаToolStripMenuItem";
             this.справкаToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
             this.справкаToolStripMenuItem.Text = "Справка";
+            this.справкаToolStripMenuItem.Click += new System.EventHandler(this.справкаToolStripMenuItem_Click);
             // 
             // пользовательToolStripMenuItem
             // 
@@ -919,6 +1171,21 @@
             // 
             this.textsTableAdapter1.ClearBeforeFill = true;
             // 
+            // dataBaseZKIDataSet21
+            // 
+            this.dataBaseZKIDataSet21.DataSetName = "DataBaseZKIDataSet2";
+            this.dataBaseZKIDataSet21.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(190, 28);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 21);
+            this.comboBox1.TabIndex = 0;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            // 
             // AdminForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -944,9 +1211,10 @@
             this.radPageView1.ResumeLayout(false);
             this.radPageViewPage1.ResumeLayout(false);
             this.radPageViewPage1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.radButton7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radButton6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.DtGridViewTM.MasterTemplate)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.DtGridViewTM)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtRazd)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtTema)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.BtnSaveRaz)).EndInit();
@@ -955,9 +1223,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.radLabel1)).EndInit();
             this.radPageViewPage2.ResumeLayout(false);
             this.radPageViewPage2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.radButton8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radButton9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radLabel8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radLabel7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radLabel6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radLabel5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtNameText)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TextGridview.MasterTemplate)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TextGridview)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtPath)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radButton2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radButton1)).EndInit();
@@ -967,21 +1240,37 @@
             ((System.ComponentModel.ISupportInitialize)(this.radPageView2)).EndInit();
             this.radPageView2.ResumeLayout(false);
             this.radPageViewPage5.ResumeLayout(false);
+            this.radPageViewPage5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.radLabel11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radLabel10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radLabel9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radButton5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.sectionsBindingSource2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataBaseZKIDataSet2)).EndInit();
             this.radPageViewPage3.ResumeLayout(false);
             this.radPageViewPage3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.radLabel4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radGridView1.MasterTemplate)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radButton10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radButton11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radLabel16)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radLabel15)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radLabel14)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radLabel13)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radLabel12)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.optionsBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radTextBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radButton3)).EndInit();
             this.radPageViewPage4.ResumeLayout(false);
             this.radPageViewPage4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.radGridView2.MasterTemplate)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radButton12)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radButton13)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radLabel22)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radLabel21)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radLabel20)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radLabel19)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radLabel18)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radLabel17)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radButton4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radTextBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radTextBox4)).EndInit();
@@ -996,6 +1285,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.answersBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataBaseZKIDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.optionsBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataBaseZKIDataSet21)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -1015,17 +1305,14 @@
         private Telerik.WinControls.UI.RadPageViewPage radPageViewPage2;
         private Telerik.WinControls.UI.RadTextBoxControl txtTema;
         private Telerik.WinControls.UI.RadLabel radLabel2;
-        private Telerik.WinControls.UI.RadGridView DtGridViewTM;
         private Telerik.WinControls.UI.RadTextBoxControl txtRazd;
         private Telerik.WinControls.UI.RadButton BtnSaveRaz;
         private Telerik.WinControls.UI.RadLabel radLabel3;
         private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ComboBox comboBox1;
         private Telerik.WinControls.UI.RadTextBox txtPath;
         private Telerik.WinControls.UI.RadButton radButton2;
         private Telerik.WinControls.UI.RadButton radButton1;
         private System.Windows.Forms.OpenFileDialog OpenFilebtnOne;
-        private Telerik.WinControls.UI.RadGridView TextGridview;
         private System.Windows.Forms.ComboBox comboBox3;
         private DataBaseZKIDataSet dataBaseZKIDataSet;
         private System.Windows.Forms.BindingSource sectionsBindingSource;
@@ -1054,7 +1341,6 @@
         private System.Windows.Forms.ComboBox comboBox4;
         private Telerik.WinControls.UI.RadTextBox radTextBox1;
         private Telerik.WinControls.UI.RadButton radButton3;
-        private Telerik.WinControls.UI.RadGridView radGridView1;
         private System.Windows.Forms.ComboBox comboBox7;
         private Telerik.WinControls.UI.RadTextBox radTextBox5;
         private Telerik.WinControls.UI.RadTextBox radTextBox4;
@@ -1071,7 +1357,6 @@
         private System.Windows.Forms.RadioButton radioButton2;
         private System.Windows.Forms.RadioButton radioButton1;
         private Telerik.WinControls.UI.RadButton radButton4;
-        private Telerik.WinControls.UI.RadGridView radGridView2;
         private DataBaseZKIDataSet2 dataBaseZKIDataSet2;
         private System.Windows.Forms.BindingSource sectionsBindingSource2;
         private DataBaseZKIDataSet2TableAdapters.SectionsTableAdapter sectionsTableAdapter1;
@@ -1079,11 +1364,42 @@
         private DataBaseZKIDataSet2TableAdapters.OptionsTableAdapter optionsTableAdapter1;
         private System.Windows.Forms.BindingSource textsBindingSource;
         private DataBaseZKIDataSet2TableAdapters.TextsTableAdapter textsTableAdapter1;
-        private Telerik.WinControls.UI.RadLabel radLabel4;
         private Telerik.WinControls.UI.RadPageViewPage radPageViewPage5;
         private System.Windows.Forms.ComboBox comboBox14;
         private System.Windows.Forms.ComboBox comboBox15;
         private System.Windows.Forms.ComboBox comboBox16;
         private Telerik.WinControls.UI.RadButton radButton5;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.DataGridView dataGridView3;
+        private System.Windows.Forms.DataGridView dataGridView4;
+        private Telerik.WinControls.UI.RadLabel radLabel8;
+        private Telerik.WinControls.UI.RadLabel radLabel7;
+        private Telerik.WinControls.UI.RadLabel radLabel6;
+        private Telerik.WinControls.UI.RadLabel radLabel5;
+        private Telerik.WinControls.UI.RadLabel radLabel11;
+        private Telerik.WinControls.UI.RadLabel radLabel10;
+        private Telerik.WinControls.UI.RadLabel radLabel9;
+        private Telerik.WinControls.UI.RadLabel radLabel16;
+        private Telerik.WinControls.UI.RadLabel radLabel15;
+        private Telerik.WinControls.UI.RadLabel radLabel14;
+        private Telerik.WinControls.UI.RadLabel radLabel13;
+        private Telerik.WinControls.UI.RadLabel radLabel12;
+        private Telerik.WinControls.UI.RadLabel radLabel18;
+        private Telerik.WinControls.UI.RadLabel radLabel17;
+        private Telerik.WinControls.UI.RadLabel radLabel22;
+        private Telerik.WinControls.UI.RadLabel radLabel21;
+        private Telerik.WinControls.UI.RadLabel radLabel20;
+        private Telerik.WinControls.UI.RadLabel radLabel19;
+        private Telerik.WinControls.UI.RadButton radButton7;
+        private Telerik.WinControls.UI.RadButton radButton6;
+        private Telerik.WinControls.UI.RadButton radButton8;
+        private Telerik.WinControls.UI.RadButton radButton9;
+        private Telerik.WinControls.UI.RadButton radButton10;
+        private Telerik.WinControls.UI.RadButton radButton11;
+        private Telerik.WinControls.UI.RadButton radButton12;
+        private Telerik.WinControls.UI.RadButton radButton13;
+        private DataBaseZKIDataSet2 dataBaseZKIDataSet21;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }

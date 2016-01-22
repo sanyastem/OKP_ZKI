@@ -258,6 +258,12 @@
     <Compile Include="Adminstrator.cs">
       <DependentUpon>DBZKI.tt</DependentUpon>
     </Compile>
+    <Compile Include="AllResultForms.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AllResultForms.Designer.cs">
+      <DependentUpon>AllResultForms.cs</DependentUpon>
+    </Compile>
     <Compile Include="Answers.cs">
       <DependentUpon>DBZKI.tt</DependentUpon>
     </Compile>
@@ -340,6 +346,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AdminForm.resx">
       <DependentUpon>AdminForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllResultForms.resx">
+      <DependentUpon>AllResultForms.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Autorizaishen.resx">
       <DependentUpon>Autorizaishen.cs</DependentUpon>

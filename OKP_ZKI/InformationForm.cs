@@ -14,6 +14,7 @@ namespace OKP_ZKI
     {
         string nameAutoriseishen;
         int strOne = 0;
+        string gg;
         public InformationForm(string name)
         {
             nameAutoriseishen = name;
@@ -66,9 +67,9 @@ namespace OKP_ZKI
                      SqlCommand a = new SqlCommand(zapros1, db);
             SqlCommand b = new SqlCommand(zapros2,db);
             strOne = (int)b.ExecuteScalar();
-            string n = (string)a.ExecuteScalar();
+            gg = (string)a.ExecuteScalar();
             
-            webBrowser1.Navigate(n);
+            webBrowser1.Navigate(gg);
                      
 
                  
@@ -94,9 +95,28 @@ namespace OKP_ZKI
 
         private void btnTest_Click(object sender, EventArgs e)
         {
+            DataBase.DataBaseJobs db = new DataBase.DataBaseJobs();
+            if (db.OtvetSocTwo(gg) && db.QuestionSocTwo(gg))
+            {
+                MessageBox.Show("Нету теста на данную тему!");
+            }
+            else
+            {
+                TestForm forms = new TestForm(strOne, nameAutoriseishen);
+                forms.ShowDialog();
+            }
+            
+        }
 
-            TestForm forms = new TestForm(strOne,nameAutoriseishen);
+        private void результатToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AllResultForms forms = new AllResultForms();
             forms.ShowDialog();
+        }
+
+        private void справкаToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Help.ShowHelp(this, @"help.chm",  HelpNavigator.TableOfContents);
         }
     }
 }

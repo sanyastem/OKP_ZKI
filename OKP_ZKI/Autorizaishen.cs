@@ -29,7 +29,7 @@ namespace OKP_ZKI
             {
                 MessageBox.Show("Неверный логин или пароль!","Ошибка!!!",MessageBoxButtons.OK,MessageBoxIcon.Error);
             }
-           
+            
         
 
         }
@@ -50,6 +50,11 @@ namespace OKP_ZKI
             AdminAutorizeishen form = new AdminAutorizeishen();
             form.Show();
             this.Hide();
+        }
+
+        private void справкаToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Help.ShowHelp(this, @"help.chm",  HelpNavigator.TableOfContents);
         }
     }
 }

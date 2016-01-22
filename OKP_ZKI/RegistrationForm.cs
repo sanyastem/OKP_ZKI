@@ -19,16 +19,27 @@ namespace OKP_ZKI
 
         private void btnRegistration_Click(object sender, EventArgs e)
         {
-            if (txtPassword_one.Text == txtPassword_two.Text)
+            DataBaseJobs db = new DataBaseJobs();
+            if (db.UsersProverk(txtlogin.Text))
             {
-                DataBaseJobs db = new DataBaseJobs();
-                db.Usersregistration(txtlogin.Text.ToString(),txtPassword_two.Text.ToString());
-                this.Close();
+                MessageBox.Show("Такая запись уже существует!");
             }
             else
             {
-                MessageBox.Show("Поля не равны!","Ошибка!!!",MessageBoxButtons.OK,MessageBoxIcon.Error);
+                if (txtPassword_one.Text == txtPassword_two.Text)
+                {
+                    
+                    db.Usersregistration(txtlogin.Text.ToString(), txtPassword_two.Text.ToString());
+                    this.Close();
+                    MessageBox.Show("Регистрация произведена!");
+                }
+                else
+                {
+                    MessageBox.Show("Поля не равны!", "Ошибка!!!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
+
+            
         }
     }
 }

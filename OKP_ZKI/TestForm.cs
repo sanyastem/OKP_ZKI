@@ -22,7 +22,7 @@ namespace OKP_ZKI
         {
             str1 = str;
             nameAutoriseishen = name;
-            using (SqlConnection con = new SqlConnection(@"Data Source=АЛЕКСАНДР-ПК\SQLEXPRESS;Initial Catalog=DataBaseZKI;Integrated Security=True"))
+            using (SqlConnection con = new SqlConnection(@"Data Source=(local)\SQLEXPRESS;Initial Catalog=DataBaseZKI;Integrated Security=True"))
             {
                 string zapros = string.Format("SELECT Questions.Question FROM Sections,Subjects,Texts,Questions,Tests "
 +" WHERE Sections.id_section = Subjects.id_section AND Subjects.id_subject = Texts.id_subject AND Tests.id_test = Questions.id_test AND Texts.id_text = Tests.id_texts AND "
